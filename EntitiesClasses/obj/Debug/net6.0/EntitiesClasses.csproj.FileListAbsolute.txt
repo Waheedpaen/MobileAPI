@@ -1,0 +1,40 @@
+C:\Users\Waheed\Desktop\DataList\MobileManagmentSystemKurd\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.deps.json
+C:\Users\Waheed\Desktop\DataList\MobileManagmentSystemKurd\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.dll
+C:\Users\Waheed\Desktop\DataList\MobileManagmentSystemKurd\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.pdb
+C:\Users\Waheed\Desktop\DataList\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.csproj.AssemblyReference.cache
+C:\Users\Waheed\Desktop\DataList\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Waheed\Desktop\DataList\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.AssemblyInfoInputs.cache
+C:\Users\Waheed\Desktop\DataList\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.AssemblyInfo.cs
+C:\Users\Waheed\Desktop\DataList\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.csproj.CoreCompileInputs.cache
+C:\Users\Waheed\Desktop\DataList\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.dll
+C:\Users\Waheed\Desktop\DataList\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\refint\EntitiesClasses.dll
+C:\Users\Waheed\Desktop\DataList\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.pdb
+C:\Users\Waheed\Desktop\DataList\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\ref\EntitiesClasses.dll
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.deps.json
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.dll
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.pdb
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.csproj.AssemblyReference.cache
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.AssemblyInfoInputs.cache
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.AssemblyInfo.cs
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.csproj.CoreCompileInputs.cache
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.dll
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\refint\EntitiesClasses.dll
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.pdb
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\ref\EntitiesClasses.dll
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.runtimeconfig.json
+D:\Bannaz Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.genruntimeconfig.cache
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.deps.json
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.runtimeconfig.json
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.dll
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.pdb
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.csproj.AssemblyReference.cache
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.GeneratedMSBuildEditorConfig.editorconfig
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.AssemblyInfoInputs.cache
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.AssemblyInfo.cs
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.csproj.CoreCompileInputs.cache
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.dll
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\refint\EntitiesClasses.dll
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.pdb
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.genruntimeconfig.cache
+D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\ref\EntitiesClasses.dll
