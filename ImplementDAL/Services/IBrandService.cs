@@ -82,6 +82,7 @@ namespace ImplementDAL.Services
             {
                 _logger?.LogEnter();
                 update.Name = model.Name;
+                update.ImageUrl = model.ImageUrl;
                 update.Updated_At = model.Updated_At;
                 await _unitOfWork.CommitAsync();
                 return update;
