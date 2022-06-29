@@ -5076,11 +5076,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "D:\\MobileAPI\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectPath": "D:\\MobileAPI\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\DataAccessLayer\\obj\\",
+      "outputPath": "D:\\MobileAPI\\MobileAPI\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5097,14 +5097,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj": {
-              "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj"
+            "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+              "projectPath": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
             },
-            "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj": {
-              "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj"
+            "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj": {
+              "projectPath": "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj"
             },
-            "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\ViewModel.csproj": {
-              "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\ViewModel.csproj"
+            "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+              "projectPath": "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj"
             }
           }
         }

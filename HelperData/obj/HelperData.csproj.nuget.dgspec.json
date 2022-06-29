@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj": {}
+    "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj": {}
   },
   "projects": {
-    "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj": {
+    "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj",
+        "projectUniqueName": "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj",
         "projectName": "HelperData",
-        "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj",
+        "projectPath": "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\obj\\",
+        "outputPath": "D:\\MobileAPI\\MobileAPI\\HelperData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",

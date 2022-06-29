@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj": {}
+    "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {}
   },
   "projects": {
-    "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj": {
+    "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectUniqueName": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
         "projectName": "EntitiesClasses",
-        "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectPath": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\obj\\",
+        "outputPath": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",

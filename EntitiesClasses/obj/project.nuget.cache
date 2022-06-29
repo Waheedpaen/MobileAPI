@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jLyz33FMUapU0zNTIBeyROUmEuC+hQOQXQwSgng+GXyGsn5BWJM6RHuzcU3UmeI3yU8HXIKk6ycT5ipDo6YVKA==",
+  "dgSpecHash": "ErRrB5/yfnLHyVZyBUFt1x+5pmSPXqlnqXLNPMItUfzbjmjhgBKGmoXufX/0ug2aXBGuUYk3oyNiUEJpg2R0sQ==",
   "success": true,
-  "projectFilePath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj",
+  "projectFilePath": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.5\\microsoft.aspnetcore.cryptography.internal.6.0.5.nupkg.sha512",

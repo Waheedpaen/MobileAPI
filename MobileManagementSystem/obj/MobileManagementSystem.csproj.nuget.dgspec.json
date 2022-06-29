@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\MobileManagementSystem\\MobileManagementSystem.csproj": {}
+    "D:\\MobileAPI\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj": {}
   },
   "projects": {
-    "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "D:\\MobileAPI\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "D:\\MobileAPI\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "D:\\MobileAPI\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\DataAccessLayer\\obj\\",
+        "outputPath": "D:\\MobileAPI\\MobileAPI\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj": {
-                "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj"
+              "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+                "projectPath": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
               },
-              "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj": {
-                "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj"
+              "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj": {
+                "projectPath": "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj"
               },
-              "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\ViewModel.csproj": {
-                "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\ViewModel.csproj"
+              "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+                "projectPath": "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj": {
+    "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectUniqueName": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
         "projectName": "EntitiesClasses",
-        "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectPath": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\obj\\",
+        "outputPath": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -156,14 +156,14 @@
         }
       }
     },
-    "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj": {
+    "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj",
+        "projectUniqueName": "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj",
         "projectName": "HelperData",
-        "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj",
+        "projectPath": "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\obj\\",
+        "outputPath": "D:\\MobileAPI\\MobileAPI\\HelperData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -224,14 +224,14 @@
         }
       }
     },
-    "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ImplementDAL\\ImplementDAL.csproj": {
+    "D:\\MobileAPI\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ImplementDAL\\ImplementDAL.csproj",
+        "projectUniqueName": "D:\\MobileAPI\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj",
         "projectName": "ImplementDAL",
-        "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ImplementDAL\\ImplementDAL.csproj",
+        "projectPath": "D:\\MobileAPI\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ImplementDAL\\obj\\",
+        "outputPath": "D:\\MobileAPI\\MobileAPI\\ImplementDAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -248,14 +248,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\DataAccessLayer\\DataAccessLayer.csproj"
+              "D:\\MobileAPI\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "D:\\MobileAPI\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj": {
-                "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj"
+              "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj": {
+                "projectPath": "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj"
               },
-              "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\ViewModel.csproj": {
-                "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\ViewModel.csproj"
+              "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+                "projectPath": "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj"
               }
             }
           }
@@ -294,14 +294,14 @@
         }
       }
     },
-    "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\MobileManagementSystem\\MobileManagementSystem.csproj": {
+    "D:\\MobileAPI\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\MobileManagementSystem\\MobileManagementSystem.csproj",
+        "projectUniqueName": "D:\\MobileAPI\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj",
         "projectName": "MobileManagementSystem",
-        "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\MobileManagementSystem\\MobileManagementSystem.csproj",
+        "projectPath": "D:\\MobileAPI\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\MobileManagementSystem\\obj\\",
+        "outputPath": "D:\\MobileAPI\\MobileAPI\\MobileManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -318,17 +318,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\DataAccessLayer\\DataAccessLayer.csproj"
+              "D:\\MobileAPI\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "D:\\MobileAPI\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj": {
-                "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\HelperData\\HelperData.csproj"
+              "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj": {
+                "projectPath": "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj"
               },
-              "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ImplementDAL\\ImplementDAL.csproj": {
-                "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ImplementDAL\\ImplementDAL.csproj"
+              "D:\\MobileAPI\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj": {
+                "projectPath": "D:\\MobileAPI\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj"
               },
-              "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\ViewModel.csproj": {
-                "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\ViewModel.csproj"
+              "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+                "projectPath": "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj"
               }
             }
           }
@@ -388,14 +388,14 @@
         }
       }
     },
-    "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\ViewModel.csproj": {
+    "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\ViewModel.csproj",
+        "projectUniqueName": "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj",
         "projectName": "ViewModel",
-        "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\ViewModel.csproj",
+        "projectPath": "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\obj\\",
+        "outputPath": "D:\\MobileAPI\\MobileAPI\\ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -412,8 +412,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj": {
-                "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj"
+              "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+                "projectPath": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
               }
             }
           }

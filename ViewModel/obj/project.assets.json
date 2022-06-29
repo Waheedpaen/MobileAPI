@@ -2203,11 +2203,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\ViewModel.csproj",
+      "projectUniqueName": "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj",
       "projectName": "ViewModel",
-      "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\ViewModel.csproj",
+      "projectPath": "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\ViewModel\\obj\\",
+      "outputPath": "D:\\MobileAPI\\MobileAPI\\ViewModel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2224,8 +2224,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj": {
-              "projectPath": "D:\\Waheed Project\\NetMobile\\MobileManagmentSystemKurd\\EntitiesClasses\\EntitiesClasses.csproj"
+            "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+              "projectPath": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
             }
           }
         }
