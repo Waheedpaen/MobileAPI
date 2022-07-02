@@ -157,5 +157,10 @@ public class MobileService : IMobileService
     {
         throw new NotImplementedException();
     }
+
+    public async Task<List<Mobile>> GetMobileByBrand(int Id)
+    {
+        return await _unitOfWork.MobileRepository.GetMobileByBrand(Id);
+    }
 }
  

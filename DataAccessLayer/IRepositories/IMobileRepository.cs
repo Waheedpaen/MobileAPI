@@ -17,5 +17,7 @@ public interface IMobileRepository:   IRepository<Mobile, int>
     Task<MobileImage> SaveMobileImage(MobileImage model);
     Task<MobileImage> SaveMobileImages(MobileImage model);
     Task<List<MobileImage>> GetMobileImage();
+    Task<List<Mobile>> GetMobileByBrand(int Id);
+
 
 }

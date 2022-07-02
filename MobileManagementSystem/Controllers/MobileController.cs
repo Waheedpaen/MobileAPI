@@ -171,6 +171,25 @@ public class MobileController : BaseController
         _response.Success = true;
         return Ok(_response);
     }
+    [HttpGet("GetMobileByBrand/{Id}")]
+    public async Task<IActionResult> GetMobileByBrand(int Id)
+    {
+        var obj = _mobileService.GetMobileByBrand(Id);
+        var objDto = _mapper.Map<MobileDtoForList>(obj);
+
+        if (objDto != null)
+        {
+            _response.Data = objDto;
+            _response.Success = true;
+            return Ok(_response);
+        }
+        else
+        {
+            _response.Data = null;
+            _response.Success = false;
+            return Ok(_response);
+        }
+    }
 
 }
  

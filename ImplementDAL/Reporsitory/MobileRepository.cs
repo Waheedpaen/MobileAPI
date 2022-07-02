@@ -100,5 +100,10 @@ public class MobileRepository : Reporsitory<Mobile, int>, IMobileRepository
        
         return model;
     }
+
+    public async Task<List<Mobile>> GetMobileByBrand(int Id)
+    { 
+        return await Context.Set<Mobile>().Where(data=>data.BrandId == Id).ToListAsync();
+    }
 }
 

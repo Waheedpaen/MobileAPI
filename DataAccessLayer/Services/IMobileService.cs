@@ -6,6 +6,7 @@
    public interface IMobileService
     {
     Task<IEnumerable<Mobile>> Get();
+    Task<List<Mobile>> GetMobileByBrand(int Id);
     Task<Mobile> Get(int id);
     Task<Mobile> Create(Mobile model);
     Task<Mobile> Update(Mobile update, Mobile model);
