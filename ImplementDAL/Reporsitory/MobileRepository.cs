@@ -60,7 +60,7 @@ public class MobileRepository : Reporsitory<Mobile, int>, IMobileRepository
 
     public async Task<List<Mobile>> SearchingData(string name)
     {
-      return await Context.Set<Mobile>().Where(data=>data.Name.StartsWith(name)).ToListAsync();
+      return await Context.Set<Mobile>().Include(data=>data.MobileImages).Where(data=>data.Name.StartsWith(name)).ToListAsync();
     }
 
     public async Task<List<OSVersion>> GetOSVersionByOperatingSystem(int id)

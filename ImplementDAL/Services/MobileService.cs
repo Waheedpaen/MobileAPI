@@ -71,7 +71,7 @@ public class MobileService : IMobileService
         update.Sell=model.Sell;
         update.Wifi=model.Wifi;
         update.Weight=model.Weight;
-      
+        update.Sell = model.Sell;
         update.Quantity=model.Quantity;
         update.Bluetooth=   model.Bluetooth;
         update.BatteryMah=model.BatteryMah;
@@ -80,6 +80,7 @@ public class MobileService : IMobileService
         update.USBConnector = model.USBConnector;
         update.Storage=model.Storage;
         update.BrandId=model.BrandId;
+        update.LaunchDate = model.LaunchDate;
         update.ColorId=model.ColorId;   
         update.OSVersionId=model.OSVersionId;
         update.CPU=model.CPU; 
