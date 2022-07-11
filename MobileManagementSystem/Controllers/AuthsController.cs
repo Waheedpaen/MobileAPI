@@ -86,23 +86,15 @@ namespace MobileManagementSystem.Controllers
 
 
             };
-
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config.GetSection("AppSettings:Token").Value));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.UtcNow.AddDays(5),
-                SigningCredentials = creds
-            };
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var token = tokenHandler.CreateToken(tokenDescriptor);
+    
+            var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["JsonWebTokenKeys:IssuerSigningKey"]));
+            var token = new JwtSecurityToken(expires: DateTime.Now.AddHours(3), claims: claims, signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256));
 
             _response.Data = new
             {
                 loggedInUserId = claims.FirstOrDefault(x => x.Type.Equals(Enums.ClaimType.UserId.ToString())).Value,
                 loggedInUserName = claims.FirstOrDefault(x => x.Type.Equals(Enums.ClaimType.Name.ToString())).Value,
-                token = tokenHandler.WriteToken(token),
+                token = new JwtSecurityTokenHandler().WriteToken(token),
                 loggedInUserTypeId = claims.FirstOrDefault(x => x.Type.Equals(Enums.ClaimType.UserTypeId.ToString())).Value,
                 
       

@@ -29,7 +29,7 @@ public  class UserRepository :  Reporsitory<User, int>, IUserRepository
         _LoggedIn_UserID = Convert.ToInt32(httpContextAccessor.HttpContext.User.FindFirstValue(Enums.ClaimType.UserId.ToString()));
         _LoggedIn_UserTypeId = Convert.ToInt32(httpContextAccessor.HttpContext.User.FindFirstValue(Enums.ClaimType.UserTypeId.ToString()));
         _LoggedIn_UserName = httpContextAccessor.HttpContext.User.FindFirstValue(Enums.ClaimType.Name.ToString())?.ToString();
-        _LoggedIn_RestaurantBranchId = Convert.ToInt32(httpContextAccessor.HttpContext.User.FindFirstValue(Enums.ClaimType.RestaurantBranchId.ToString()));
+        ;
 
 
         //if (_LoggedIn_UserID == 0)
@@ -53,6 +53,7 @@ public  class UserRepository :  Reporsitory<User, int>, IUserRepository
 
     public async   Task<LoginUserDto> Login(UserDtoLogin model)
     {
+       
         ServiceResponse<object> serviceResponse = new();
         var objUser = await Context.Set<User>().Include(data=>data.UserTypes).Where(data => data.UserName.ToLower() == model.Username.ToLower().Trim()&& (data.UserTypesId == model.UserType )).FirstOrDefaultAsync();
    
@@ -75,8 +76,6 @@ public  class UserRepository :  Reporsitory<User, int>, IUserRepository
             return null;
         if (!Seed.VerifyPasswordHash(model.Password.Trim(), objUser.PasswordHash, objUser.PasswordSalt))
             return null;
-
-
 
         return obj;
     }
