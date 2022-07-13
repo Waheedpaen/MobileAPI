@@ -1,5 +1,7 @@
-﻿ 
-   namespace DataAccessLayer.IRepositories;
+﻿
+
+
+namespace DataAccessLayer.IRepositories;
 
 public interface IMobileRepository:   IRepository<Mobile, int>
 { 
@@ -18,6 +20,9 @@ public interface IMobileRepository:   IRepository<Mobile, int>
     Task<MobileImage> SaveMobileImages(MobileImage model);
     Task<List<MobileImage>> GetMobileImage();
     Task<List<Mobile>> GetMobileByBrand(int Id);
+    Task<List<Mobile>> GetMobileListByColor(string name);
+
+    Task<List<Mobile>> GetMobilesByPrice(RangeDto model);
 
 
 }

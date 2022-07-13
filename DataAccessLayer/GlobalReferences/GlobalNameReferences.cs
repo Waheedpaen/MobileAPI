@@ -4,8 +4,8 @@ global using System.Text;
 global using System.Threading.Tasks;
 global using System.Linq.Expressions;
 global  using EntitiesClasses.Entities;
-
-  global  using DataAccessLayer.IUnitofWork;
+global  using ViewModel.ViewModels.OtherDtos;
+global  using DataAccessLayer.IUnitofWork;
 global using System.Diagnostics;
 global using DataAccessLayer.ILoggerManager;
 global using Microsoft.Extensions.Logging;

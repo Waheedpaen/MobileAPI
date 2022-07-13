@@ -24,7 +24,9 @@
     Task<MobileImage> CreateMobileImage(MobileImage model);
     Task<MobileImage> CreateMobileImages(MobileImage model);
     Task<MobileImage> UpdateMobileImage(MobileImage update, MobileImage model);
-    Task<List<MobileImage>> SearchMobileImageData(string name);
+ 
     Task<MobileImage> DeleteMobileImage(MobileImage model);
+    Task<List<Mobile>> GetMobileListByColor(string name);
+    Task<List<Mobile>> GetMobilesByPrice(RangeDto model);
 }
  

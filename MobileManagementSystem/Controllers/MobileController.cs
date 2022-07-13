@@ -1,6 +1,8 @@
-﻿ 
+﻿
 
- namespace MobileManagementSystem.Controllers;
+
+
+namespace MobileManagementSystem.Controllers;
 [Route("api/[controller]")]
 [ApiController]
 public class MobileController : BaseController
@@ -67,8 +69,7 @@ public class MobileController : BaseController
         }
        
     }
-  
-
+ 
     [HttpPost("MobileImageSave")]
     public async Task<IActionResult> MobileImageSave(List<MobileImageDtoForSave> saveMobile)
     {
@@ -190,6 +191,44 @@ public class MobileController : BaseController
             return Ok(_response);
         }
     }
+    [HttpGet("GetMobileByColor/{Name}")]
+    public async Task<IActionResult> GetMobileByColor(string Name)
+    {
+        var mobileDetail = await _mobileService.GetMobileListByColor(Name);
+        var mobileDetailDto = _mapper.Map<List<MobileDtoForList>>(mobileDetail);
+        if (mobileDetailDto != null)
+        {
+            _response.Data = mobileDetailDto;
+            _response.Success = true;
+            return Ok(_response);
+        }
+        else
+        {
+            _response.Data = null;
+            _response.Success = false;
+            return Ok(_response);
+        }
+    }
+
+    [HttpPost("GetMobilesByPrice")]
+    public async Task<IActionResult> GetMobilesByPrice(RangeDto model)
+    {
+        var mobileDetail = await _mobileService.GetMobilesByPrice(model);
+        var mobileDetailDto = _mapper.Map<List<MobileDtoForList>>(mobileDetail);
+        if (mobileDetailDto != null)
+        {
+            _response.Data = mobileDetailDto;
+            _response.Success = true;
+            return Ok(_response);
+        }
+        else
+        {
+            _response.Data = null;
+            _response.Success = false;
+            return Ok(_response);
+        }
+    }
+   
 
 }
  

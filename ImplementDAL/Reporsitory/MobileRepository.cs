@@ -1,6 +1,7 @@
 ﻿
 
 using Microsoft.EntityFrameworkCore;
+using ViewModel.ViewModels.OtherDtos;
 
 namespace ImplementDAL.Reporsitory;
 
@@ -104,6 +105,19 @@ public class MobileRepository : Reporsitory<Mobile, int>, IMobileRepository
     public async Task<List<Mobile>> GetMobileByBrand(int Id)
     { 
         return await Context.Set<Mobile>().Where(data=>data.BrandId == Id).ToListAsync();
+    }
+
+    public async Task<List<Mobile>> GetMobileListByColor(string name)
+    {
+        return await Context.Set<Mobile>().Include(data=>data.MobileImages).Include(data => data.Color).Where(data => data.Color.Name.Contains(name)).ToListAsync();
+
+    }
+
+    public async Task<List<Mobile>> GetMobilesByPrice(RangeDto model)
+    {
+     return await Context.Set<Mobile>().Include(data => data.MobileImages).Include(data => data.Color)
+            .Where(data => data.MobilePrice >= model.First && data.MobilePrice <= model.Second )
+            .ToListAsync();
     }
 }
 

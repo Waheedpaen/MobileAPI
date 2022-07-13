@@ -1,4 +1,6 @@
 ﻿
+using ViewModel.ViewModels.OtherDtos;
+
 namespace ImplementDAL.Services;
 public class MobileService : IMobileService
 {
@@ -68,7 +70,7 @@ public class MobileService : IMobileService
 
     public async Task<Mobile> Update(Mobile update, Mobile model)
     {
-        update.Sell=model.Sell;
+ 
         update.Wifi=model.Wifi;
         update.Weight=model.Weight;
         update.Sell = model.Sell;
@@ -154,14 +156,21 @@ public class MobileService : IMobileService
         var color = await _unitOfWork.MobileRepository.GetColor();
         return color;
     }
-    Task<List<MobileImage>> IMobileService.SearchMobileImageData(string name)
-    {
-        throw new NotImplementedException();
-    }
+   
 
     public async Task<List<Mobile>> GetMobileByBrand(int Id)
     {
         return await _unitOfWork.MobileRepository.GetMobileByBrand(Id);
+    }
+
+    public async Task<List<Mobile>> GetMobileListByColor(string name)
+    {
+        return await _unitOfWork.MobileRepository.GetMobileListByColor(name);
+    }
+
+    public async Task<List<Mobile>> GetMobilesByPrice(RangeDto model)
+    {
+        return await _unitOfWork.MobileRepository.GetMobilesByPrice(model);
     }
 }
  

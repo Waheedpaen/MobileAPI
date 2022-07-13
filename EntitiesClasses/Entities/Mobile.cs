@@ -16,7 +16,7 @@ namespace EntitiesClasses.Entities;
     public string Storage { get; set; }
     public string BatteryMah { get; set; }
     public string Ram { get; set; }
-    [Column(TypeName = "date")]
+    [Column(TypeName = "date")] 
     public DateTime? LaunchDate { get; set; }
     public string MobileWeight { get; set; }
     [Required]
