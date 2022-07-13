@@ -70,6 +70,10 @@ builder.Services.AddAuthentication(options => {
 var configuration = builder.Configuration; 
 
 
+
+
+
+
 ConfigurationManager Configuration = builder.Configuration;
 
 // Add services to the container.
