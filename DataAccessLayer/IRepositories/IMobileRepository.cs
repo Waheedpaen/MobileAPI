@@ -23,6 +23,7 @@ public interface IMobileRepository:   IRepository<Mobile, int>
     Task<List<Mobile>> GetMobileListByColor(string name);
 
     Task<List<Mobile>> GetMobilesByPrice(RangeDto model);
+    Task<List<Mobile>> GetMobilesByScreen(RangeScreenSizeDto model);
 
 
 }

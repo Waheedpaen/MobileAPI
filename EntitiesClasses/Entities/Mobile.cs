@@ -21,7 +21,7 @@ namespace EntitiesClasses.Entities;
     public string MobileWeight { get; set; }
     [Required]
     [Column(TypeName = "varchar(50)")]
-    public string ScreenSize { get; set; }
+    public decimal ScreenSize { get; set; }
     [Required]
     [Column(TypeName = "varchar(50)")]
     public string ScreenType { get; set; }

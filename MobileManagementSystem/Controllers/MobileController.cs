@@ -228,7 +228,24 @@ public class MobileController : BaseController
             return Ok(_response);
         }
     }
-   
+    [HttpPost("GetMobilesByScreen")]
+    public async Task<IActionResult> GetMobilesByScreen(RangeScreenSizeDto screenSize)
+    {
+        var mobileDetail = await _mobileService.GetMobilesByScreen(screenSize);
+        var mobileDetailDto = _mapper.Map<List<MobileDtoForList>>(mobileDetail);
+        if (mobileDetailDto != null)
+        {
+            _response.Data = mobileDetailDto;
+            _response.Success = true;
+            return Ok(_response);
+        }
+        else
+        {
+            _response.Data = null;
+            _response.Success = false;
+            return Ok(_response);
+        }
+    }
 
 }
  

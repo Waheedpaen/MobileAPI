@@ -172,5 +172,10 @@ public class MobileService : IMobileService
     {
         return await _unitOfWork.MobileRepository.GetMobilesByPrice(model);
     }
+
+    public async Task<List<Mobile>> GetMobilesByScreen(RangeScreenSizeDto model)
+    {
+        return await _unitOfWork.MobileRepository.GetMobilesByScreen(model);
+    }
 }
  

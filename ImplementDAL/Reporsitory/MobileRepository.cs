@@ -119,5 +119,12 @@ public class MobileRepository : Reporsitory<Mobile, int>, IMobileRepository
             .Where(data => data.MobilePrice >= model.First && data.MobilePrice <= model.Second )
             .ToListAsync();
     }
+
+    public async Task<List<Mobile>> GetMobilesByScreen(RangeScreenSizeDto model)
+    {
+        return await Context.Set<Mobile>().Include(data => data.MobileImages).Include(data => data.Color)
+            .Where(data => data.ScreenSize >= model.First && data.ScreenSize <= model.Second)
+            .ToListAsync();
+    }
 }
 

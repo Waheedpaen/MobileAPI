@@ -28,5 +28,7 @@
     Task<MobileImage> DeleteMobileImage(MobileImage model);
     Task<List<Mobile>> GetMobileListByColor(string name);
     Task<List<Mobile>> GetMobilesByPrice(RangeDto model);
+
+    Task<List<Mobile>> GetMobilesByScreen(RangeScreenSizeDto model);
 }
  
