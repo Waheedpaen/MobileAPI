@@ -40,3 +40,24 @@ D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\ImplementDAL\obj\Debug\net
 D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\ImplementDAL\obj\Debug\net6.0\refint\ImplementDAL.dll
 D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\ImplementDAL\obj\Debug\net6.0\ImplementDAL.pdb
 D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\ImplementDAL\obj\Debug\net6.0\ref\ImplementDAL.dll
+D:\MobileAPI\MobileAPI\ImplementDAL\bin\Debug\net6.0\ImplementDAL.deps.json
+D:\MobileAPI\MobileAPI\ImplementDAL\bin\Debug\net6.0\ImplementDAL.dll
+D:\MobileAPI\MobileAPI\ImplementDAL\bin\Debug\net6.0\ImplementDAL.pdb
+D:\MobileAPI\MobileAPI\ImplementDAL\bin\Debug\net6.0\DataAccessLayer.dll
+D:\MobileAPI\MobileAPI\ImplementDAL\bin\Debug\net6.0\EntitiesClasses.dll
+D:\MobileAPI\MobileAPI\ImplementDAL\bin\Debug\net6.0\HelperData.dll
+D:\MobileAPI\MobileAPI\ImplementDAL\bin\Debug\net6.0\ViewModel.dll
+D:\MobileAPI\MobileAPI\ImplementDAL\bin\Debug\net6.0\DataAccessLayer.pdb
+D:\MobileAPI\MobileAPI\ImplementDAL\bin\Debug\net6.0\HelperData.pdb
+D:\MobileAPI\MobileAPI\ImplementDAL\bin\Debug\net6.0\ViewModel.pdb
+D:\MobileAPI\MobileAPI\ImplementDAL\bin\Debug\net6.0\EntitiesClasses.pdb
+D:\MobileAPI\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.csproj.AssemblyReference.cache
+D:\MobileAPI\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\MobileAPI\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.AssemblyInfoInputs.cache
+D:\MobileAPI\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.AssemblyInfo.cs
+D:\MobileAPI\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.csproj.CoreCompileInputs.cache
+D:\MobileAPI\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.csproj.CopyComplete
+D:\MobileAPI\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.dll
+D:\MobileAPI\MobileAPI\ImplementDAL\obj\Debug\net6.0\refint\ImplementDAL.dll
+D:\MobileAPI\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.pdb
+D:\MobileAPI\MobileAPI\ImplementDAL\obj\Debug\net6.0\ref\ImplementDAL.dll

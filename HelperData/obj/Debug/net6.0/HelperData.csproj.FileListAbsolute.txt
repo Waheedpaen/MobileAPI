@@ -22,3 +22,15 @@ D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\HelperData\obj\Debug\net6.
 D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\HelperData\obj\Debug\net6.0\refint\HelperData.dll
 D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\HelperData\obj\Debug\net6.0\HelperData.pdb
 D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\HelperData\obj\Debug\net6.0\ref\HelperData.dll
+D:\MobileAPI\MobileAPI\HelperData\bin\Debug\net6.0\HelperData.deps.json
+D:\MobileAPI\MobileAPI\HelperData\bin\Debug\net6.0\HelperData.dll
+D:\MobileAPI\MobileAPI\HelperData\bin\Debug\net6.0\HelperData.pdb
+D:\MobileAPI\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.csproj.AssemblyReference.cache
+D:\MobileAPI\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.GeneratedMSBuildEditorConfig.editorconfig
+D:\MobileAPI\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.AssemblyInfoInputs.cache
+D:\MobileAPI\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.AssemblyInfo.cs
+D:\MobileAPI\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.csproj.CoreCompileInputs.cache
+D:\MobileAPI\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.dll
+D:\MobileAPI\MobileAPI\HelperData\obj\Debug\net6.0\refint\HelperData.dll
+D:\MobileAPI\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.pdb
+D:\MobileAPI\MobileAPI\HelperData\obj\Debug\net6.0\ref\HelperData.dll

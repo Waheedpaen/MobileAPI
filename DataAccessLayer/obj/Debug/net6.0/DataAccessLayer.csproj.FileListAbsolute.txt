@@ -36,3 +36,22 @@ D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\DataAccessLayer\obj\Debug\
 D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
 D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
 D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+D:\MobileAPI\MobileAPI\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+D:\MobileAPI\MobileAPI\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+D:\MobileAPI\MobileAPI\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+D:\MobileAPI\MobileAPI\DataAccessLayer\bin\Debug\net6.0\EntitiesClasses.dll
+D:\MobileAPI\MobileAPI\DataAccessLayer\bin\Debug\net6.0\HelperData.dll
+D:\MobileAPI\MobileAPI\DataAccessLayer\bin\Debug\net6.0\ViewModel.dll
+D:\MobileAPI\MobileAPI\DataAccessLayer\bin\Debug\net6.0\EntitiesClasses.pdb
+D:\MobileAPI\MobileAPI\DataAccessLayer\bin\Debug\net6.0\HelperData.pdb
+D:\MobileAPI\MobileAPI\DataAccessLayer\bin\Debug\net6.0\ViewModel.pdb
+D:\MobileAPI\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\MobileAPI\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\MobileAPI\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\MobileAPI\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+D:\MobileAPI\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\MobileAPI\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+D:\MobileAPI\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+D:\MobileAPI\MobileAPI\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+D:\MobileAPI\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+D:\MobileAPI\MobileAPI\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll

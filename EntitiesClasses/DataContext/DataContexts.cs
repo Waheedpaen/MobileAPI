@@ -19,6 +19,8 @@ namespace EntitiesClasses.DataContext;
     public DbSet<Carousel> Carousels { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<Order> orders { get; set; }
+    public DbSet<OrderDetail> OrderDetail { get; set; }
+
     public DbSet<UserTypes> UserTypes { get; set; }
     public DbSet<PaymentCard> PaymentCards { get; set; }
     public DbSet<OrderPayment> OrderPayments { get; set; }

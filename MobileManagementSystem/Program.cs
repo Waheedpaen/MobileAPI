@@ -93,6 +93,8 @@ builder.Services.AddTransient<IBrandService, BrandService>();
 builder.Services.AddTransient<IMobileService, MobileService>();
 
 builder.Services.AddTransient<IOSVService, OSVService>();
+ 
+builder.Services.AddTransient<IOderService, OderService>();
 builder.Services.AddTransient<IUserService, UserService>(); 
 builder.Services.AddTransient<IOperatingSystemService, OperatingSystemService>();
 builder.Services.AddTransient<ILoggerManager, LoggerManager>(); 

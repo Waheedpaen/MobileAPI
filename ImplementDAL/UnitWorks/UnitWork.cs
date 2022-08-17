@@ -15,6 +15,8 @@ namespace ImplementDAL.UnitWorks;
     private MobileRepository _mobileRepository;
     private OSVRepository _oSVRepository;
     private OperatingSytemRepository _operatingSytemRepository;
+
+    private OderRepository _oderRepository;
     public IBrandRepository BrandRepository => _brandRepository ??= new  (_context);
 
     public IOperatingSytemRepository OperatingSytemRepository => _operatingSytemRepository ??= new   (_context);
@@ -24,6 +26,8 @@ namespace ImplementDAL.UnitWorks;
     public IMobileRepository MobileRepository => _mobileRepository ?? new (_context);
 
     public IUserRepository IUserRepository => _userRepository ??  new(_context);
+
+    public IOderRepository IOderRepository =>  _oderRepository ??= new (_context);
 
     public async Task<int> CommitAsync()
     {

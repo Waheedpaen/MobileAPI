@@ -38,3 +38,17 @@ D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\
 D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.pdb
 D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.genruntimeconfig.cache
 D:\Waheed Project\NetMobile\MobileManagmentSystemKurd\EntitiesClasses\obj\Debug\net6.0\ref\EntitiesClasses.dll
+D:\MobileAPI\MobileAPI\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.deps.json
+D:\MobileAPI\MobileAPI\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.runtimeconfig.json
+D:\MobileAPI\MobileAPI\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.dll
+D:\MobileAPI\MobileAPI\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.pdb
+D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.csproj.AssemblyReference.cache
+D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.GeneratedMSBuildEditorConfig.editorconfig
+D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.AssemblyInfoInputs.cache
+D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.AssemblyInfo.cs
+D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.csproj.CoreCompileInputs.cache
+D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.dll
+D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\refint\EntitiesClasses.dll
+D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.pdb
+D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.genruntimeconfig.cache
+D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\ref\EntitiesClasses.dll
