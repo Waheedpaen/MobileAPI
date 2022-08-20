@@ -5462,19 +5462,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\Waheed\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MobileAPI\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj",
+      "projectUniqueName": "D:\\Bannaz Projects\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj",
       "projectName": "MobileManagementSystem",
-      "projectPath": "D:\\MobileAPI\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\MobileAPI\\MobileAPI\\MobileManagementSystem\\obj\\",
+      "projectPath": "D:\\Bannaz Projects\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
+      "outputPath": "D:\\Bannaz Projects\\MobileAPI\\MobileManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5488,17 +5488,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\MobileAPI\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "D:\\MobileAPI\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj"
+            "D:\\Bannaz Projects\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "D:\\Bannaz Projects\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj": {
-              "projectPath": "D:\\MobileAPI\\MobileAPI\\HelperData\\HelperData.csproj"
+            "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj": {
+              "projectPath": "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj"
             },
-            "D:\\MobileAPI\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj": {
-              "projectPath": "D:\\MobileAPI\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj"
+            "D:\\Bannaz Projects\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj": {
+              "projectPath": "D:\\Bannaz Projects\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj"
             },
-            "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj": {
-              "projectPath": "D:\\MobileAPI\\MobileAPI\\ViewModel\\ViewModel.csproj"
+            "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+              "projectPath": "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj"
             }
           }
         }
@@ -5546,6 +5546,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.1, 6.0.1]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5554,7 +5560,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.1.22110.4\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntitiesClasses.Migrations
 {
     [DbContext(typeof(DataContexts))]
-    [Migration("20220629101735_sam")]
-    partial class sam
+    [Migration("20220820084039_Ojb")]
+    partial class Ojb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -34,6 +34,10 @@ namespace EntitiesClasses.Migrations
 
                     b.Property<DateTime?>("Created_At")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -375,8 +379,24 @@ namespace EntitiesClasses.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
+                    b.Property<DateTime?>("Created_At")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("OrderStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ShippedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("Updated_At")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -386,6 +406,44 @@ namespace EntitiesClasses.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("orders");
+                });
+
+            modelBuilder.Entity("EntitiesClasses.Entities.OrderDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime?>("Created_At")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("MobileId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("Updated_At")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MobileId");
+
+                    b.HasIndex("OrderId");
+
+                    b.ToTable("OrderDetail");
                 });
 
             modelBuilder.Entity("EntitiesClasses.Entities.OrderPayment", b =>
@@ -658,6 +716,25 @@ namespace EntitiesClasses.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("EntitiesClasses.Entities.OrderDetail", b =>
+                {
+                    b.HasOne("EntitiesClasses.Entities.Mobile", "Mobile")
+                        .WithMany()
+                        .HasForeignKey("MobileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntitiesClasses.Entities.Order", "Order")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Mobile");
+
+                    b.Navigation("Order");
+                });
+
             modelBuilder.Entity("EntitiesClasses.Entities.OrderPayment", b =>
                 {
                     b.HasOne("EntitiesClasses.Entities.Order", "Order")
@@ -694,6 +771,11 @@ namespace EntitiesClasses.Migrations
             modelBuilder.Entity("EntitiesClasses.Entities.Mobile", b =>
                 {
                     b.Navigation("MobileImages");
+                });
+
+            modelBuilder.Entity("EntitiesClasses.Entities.Order", b =>
+                {
+                    b.Navigation("OrderDetails");
                 });
 #pragma warning restore 612, 618
         }

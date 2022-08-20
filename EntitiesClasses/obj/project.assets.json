@@ -2218,19 +2218,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\Waheed\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
+      "projectUniqueName": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
       "projectName": "EntitiesClasses",
-      "projectPath": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\MobileAPI\\MobileAPI\\EntitiesClasses\\obj\\",
+      "projectPath": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
+      "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
+      "outputPath": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2304,7 +2304,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.1.22110.4\\RuntimeIdentifierGraph.json"
       }
     }
   }

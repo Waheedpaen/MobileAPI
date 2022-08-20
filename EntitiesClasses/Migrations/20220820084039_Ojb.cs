@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EntitiesClasses.Migrations
 {
-    public partial class sam : Migration
+    public partial class Ojb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,6 +15,7 @@ namespace EntitiesClasses.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Name = table.Column<string>(type: "varchar(50)", nullable: false),
                     Created_At = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Updated_At = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -275,7 +276,12 @@ namespace EntitiesClasses.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    OrderId = table.Column<int>(type: "int", nullable: false),
+                    OrderStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OrderDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    ShippedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Created_At = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Updated_At = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -308,6 +314,37 @@ namespace EntitiesClasses.Migrations
                         name: "FK_MobileImages_Mobiles_MobileId",
                         column: x => x.MobileId,
                         principalTable: "Mobiles",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "OrderDetail",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrderId = table.Column<int>(type: "int", nullable: false),
+                    Price = table.Column<int>(type: "int", nullable: false),
+                    Created_At = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Updated_At = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    MobileId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_OrderDetail", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_OrderDetail_Mobiles_MobileId",
+                        column: x => x.MobileId,
+                        principalTable: "Mobiles",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_OrderDetail_orders_OrderId",
+                        column: x => x.OrderId,
+                        principalTable: "orders",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -366,6 +403,16 @@ namespace EntitiesClasses.Migrations
                 column: "OSVersionId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_OrderDetail_MobileId",
+                table: "OrderDetail",
+                column: "MobileId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderDetail_OrderId",
+                table: "OrderDetail",
+                column: "OrderId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_OrderPayments_OrderId",
                 table: "OrderPayments",
                 column: "OrderId");
@@ -396,6 +443,9 @@ namespace EntitiesClasses.Migrations
 
             migrationBuilder.DropTable(
                 name: "MobileImages");
+
+            migrationBuilder.DropTable(
+                name: "OrderDetail");
 
             migrationBuilder.DropTable(
                 name: "OrderPayments");

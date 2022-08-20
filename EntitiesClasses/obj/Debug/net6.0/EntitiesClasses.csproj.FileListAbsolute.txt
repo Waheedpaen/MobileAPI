@@ -52,3 +52,17 @@ D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\refint\EntitiesClasses.d
 D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.pdb
 D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.genruntimeconfig.cache
 D:\MobileAPI\MobileAPI\EntitiesClasses\obj\Debug\net6.0\ref\EntitiesClasses.dll
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.deps.json
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.runtimeconfig.json
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.dll
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\bin\Debug\net6.0\EntitiesClasses.pdb
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.csproj.AssemblyReference.cache
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.AssemblyInfoInputs.cache
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.AssemblyInfo.cs
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.csproj.CoreCompileInputs.cache
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.dll
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\obj\Debug\net6.0\refint\EntitiesClasses.dll
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.pdb
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\obj\Debug\net6.0\EntitiesClasses.genruntimeconfig.cache
+D:\Bannaz Projects\MobileAPI\EntitiesClasses\obj\Debug\net6.0\ref\EntitiesClasses.dll
