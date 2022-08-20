@@ -55,7 +55,7 @@ public  class UserRepository :  Reporsitory<User, int>, IUserRepository
     {
        
         ServiceResponse<object> serviceResponse = new();
-        var objUser = await Context.Set<User>().Include(data=>data.UserTypes).Where(data => data.UserName.ToLower() == model.Username.ToLower().Trim()&& (data.UserTypesId == model.UserType )).FirstOrDefaultAsync();
+        var objUser = await Context.Set<User>().Include(data=>data.UserTypes).Where(data => data.Email.ToLower() == model.Email.ToLower().Trim()&& (data.UserTypesId == model.UserType )).FirstOrDefaultAsync();
    
         LoginUserDto obj = new();
         obj.Id = objUser.Id;

@@ -6,7 +6,6 @@
     {
         public int Id { get; set; }
         public int Mobile_Id { get; set; }
-        public int Order_Id { get; set; }
         public int Price { get; set; }
         public int Quantity { get; set; }
         public string ProductName { get; set; }
