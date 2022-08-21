@@ -10,16 +10,18 @@ namespace MobileManagementSystem.Controllers;
     {
     private readonly IMapper _mapper;
     private readonly IOderService _oderService;
-    public OrderController(IOderService oderService, IMapper mapper)
+    private readonly IUserService _userService;
+    public OrderController(IOderService oderService, IMapper mapper,   IUserService  userService  )
     {
-        _oderService = oderService;
+        _userService = userService;
+       _oderService = oderService;
         _mapper = mapper;
     }
 
-    [HttpPost("SaveBrand")]
-    public async Task<IActionResult> SaveUserAdd(int userId, List<AddUserOrderDetailDto> listOrderDetailData)
+    [HttpPost("SaveUserOrder/{Id}")]
+    public async Task<IActionResult> SaveUserOrder(int Id, List<AddUserOrderDetailDto> listOrderDetailData)
     {
-        var _response = _oderService.AddingUserOrder(userId, listOrderDetailData);
+        var _response = _oderService.AddingUserOrder(Id, listOrderDetailData);
         return Ok(_response);
     }
     

@@ -30,6 +30,8 @@ namespace ImplementDAL.Services;
 
     public async Task <ServiceResponse<object>> AddingUserOrder(int  userId, List<AddUserOrderDetailDto> listOrderDetailData)
     {
+
+        var userIdObj = await _unitOfWork.IUserRepository.GetByIdAsync(userId);
         var OrderOjb = new Order()
         {
             UserId = userId,
@@ -38,7 +40,7 @@ namespace ImplementDAL.Services;
             Updated_At = null,
         };
 
-        await _unitOfWork.IOderRepository.AddAsync(OrderOjb);
+            await _unitOfWork.IOderRepository.AddAsync(OrderOjb);
         await _unitOfWork.CommitAsync();
 
         var orderdetail = new List<OrderDetail>();
@@ -50,29 +52,31 @@ namespace ImplementDAL.Services;
                 MobileId = OrderData.Mobile_Id,
                 Quantity = OrderData.Quantity,
                 Price = OrderData.Price,
+                TotalPrice = OrderData.TotalPrice,
                 Updated_At = null
 
 
 
             }) ;
-            MailMessage msgObj = new MailMessage("abobakarpaen@gmail.com", OrderData.UserEmail);
-            msgObj.Subject = "New Mobiles Home Delivery";
-            msgObj.IsBodyHtml = true;
-            msgObj.Body = @$"<h3>{OrderData.UserName},</h3><p>Your Order Has been Succeussfully Done!</p>  
-                                  <p>Your Address is {OrderData.UserAddress},</p><p>Your Email Is: {OrderData.UserEmail}</p>
-                                  <p>Your Product Name is {OrderData.ProductName} and Quantity is {OrderData.Quantity}</p>
-                                   <p>Your Mobile Number Is: {OrderData.MobileNumber}</p><p>Your Order Date Was: {OrderData.OrderDate}</p><hr>
-                                    <p>Your Total Amount of this Products Rs{OrderData.Price * OrderData.Quantity}</p>
-                                   <h3>Thank You For Order and your Order Has been on Pending!</h3><p>Regards From <strong>New Mobiles Home Delivery</strong></p>";
 
 
-            SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
-            client.EnableSsl = true;
-            client.DeliveryMethod = SmtpDeliveryMethod.Network;
-            client.UseDefaultCredentials = false;
-            client.Credentials = new NetworkCredential() { UserName = "abobakarpaen@gmail.com", Password = "kzrcgwljcfpvbpko" };
-            client.Send(msgObj);
+            //MailMessage msgObj = new MailMessage("abobakarpaen@gmail.com", OrderData.UserEmail);
+            //msgObj.Subject = "New Mobiles Home Delivery";
+            //msgObj.IsBodyHtml = true;
+            //msgObj.Body = @$"<h3>{userIdObj.UserName},</h3><p>Your Order Has been Succeussfully Done!</p>  
+            //                      <p>Your Address is {OrderData.UserAddress},</p><p>Your Email Is: {userIdObj.Email}</p>
+            //                      <p>Your Product Name is {OrderData.ProductName} and Quantity is {OrderData.Quantity}</p>
+            //                       <p>Your Mobile Number Is: {123}</p><p>Your Order Date Was: {OrderData.OrderDate}</p><hr>
+            //                        <p>Your Total Amount of this Products Rs{OrderData.Price * OrderData.Quantity}</p>
+            //                       <h3>Thank You For Order and your Order Has been on Pending!</h3><p>Regards From <strong>New Mobiles Home Delivery</strong></p>";
 
+
+            //SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+            //client.EnableSsl = true;
+            //client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            //client.UseDefaultCredentials = false;
+            //client.Credentials = new NetworkCredential() { UserName = "abobakarpaen@gmail.com", Password = "kzrcgwljcfpvbpko" };
+            //client.Send(msgObj);
         }
          await _unitOfWork.IOderRepository.SaveOrderDetail(orderdetail);
         await _unitOfWork.CommitAsync();

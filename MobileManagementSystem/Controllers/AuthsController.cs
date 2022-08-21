@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 
 namespace MobileManagementSystem.Controllers
-{
+ ;
     [Route("api/[controller]")]
     [ApiController]
     
@@ -221,5 +221,32 @@ namespace MobileManagementSystem.Controllers
             }
 
         }
-     }
+
+    [HttpPut("UpdatePassword")]
+
+    public async Task<IActionResult> UpdatePassword(ChangePasswordDto model)
+    {
+        if (!ModelState.IsValid) return BadRequest(ModelState);
+        
+        var obj = await _userService.GetUser(model.Id);
+        if (obj != null)
+        {
+            await _userService.ChangePassword(obj, model);
+            _response.Success = true;
+            _response.Message = CustomMessage.Updated;
+            return Ok(_response);
+        }
+        else
+        {
+            _response.Success = false;
+            _response.Message = CustomMessage.RecordNotFound;
+            return Ok(_response);
+        }
+    }
+
+
+
+
+
 }
+

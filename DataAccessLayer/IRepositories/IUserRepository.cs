@@ -11,6 +11,8 @@ namespace DataAccessLayer.IRepositories;
     Task<LoginUserDto> Login(UserDtoLogin model);
 
     Task<ServiceResponse<object>> AddUser(UserAddDto model);
+
+ 
     Task<bool> UserAlreadyExit(string Name);
     Task<bool> UserNameAlreadyExit(string Name);
 

@@ -18,6 +18,9 @@ namespace EntitiesClasses.Entities
         public DateTime? Updated_At { get; set; } = DateTime.Now;
         public Boolean IsDeleted { get; set; }
         public int Quantity { get; set; }
+
+        public int TotalPrice { get; set; }
+
         [ForeignKey("Mobile")]
         public int MobileId { get; set; }
         public virtual Mobile Mobile { get; set; }

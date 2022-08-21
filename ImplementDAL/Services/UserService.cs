@@ -2,6 +2,7 @@
 
 
 
+using DataAccessLayer.Seeds;
 using HelperData;
 using ViewModel.ViewModels.UserViewModel;
 
@@ -21,6 +22,16 @@ namespace ImplementDAL.Services;
    var data =      await _unitOfWork.IUserRepository.AddUser(model);
         await _unitOfWork.CommitAsync();
         return data;
+    }
+
+    public async Task<User> ChangePassword(User update, ChangePasswordDto model)
+    {
+        byte[] passwordHash, passwordSalt;
+        Seed.CreatePasswordHash(model.Password, out passwordHash, out passwordSalt);
+        update.PasswordHash = passwordHash;
+        update.PasswordSalt = passwordSalt;
+        await _unitOfWork.CommitAsync();
+        return update;
     }
 
     public async Task<bool> CheckUserNameExistence(string Name)
