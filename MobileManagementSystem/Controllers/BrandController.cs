@@ -1,6 +1,8 @@
 ﻿
 
 
+using ClosedXML.Excel;
+
 namespace MobileManagementSystem.Controllers;
  
     [Route("api/[controller]")]
@@ -144,8 +146,50 @@ public class BrandController : BaseController
             return Ok(_response);
         }
     }
+    [HttpGet("GetUserCount")]
+    public async Task<IActionResult> GetUserCount()
+    {
+        using var workbook = new XLWorkbook();
+        var listBrand = await _brandService.Get();
+        var worksheet = workbook.Worksheets.Add("Users");
+        var currentRow = 1;
+      
+        worksheet.Row(currentRow).Height = 25.0;
+        worksheet.Row(currentRow).Style.Font.Bold = true;
+        worksheet.Row(currentRow).Style.Fill.BackgroundColor = XLColor.Red;
+        worksheet.Row(currentRow).Style.Alignment.Vertical = XLAlignmentVerticalValues.Center;
 
+        worksheet.Cell(currentRow, 1).Value = "Id";
+        worksheet.Cell(currentRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
+        worksheet.Cell(currentRow, 2).Value = "Name";
+       
+
+      
+
+        foreach (var user in listBrand)
+        {
+            currentRow++;
+
+            worksheet.Row(currentRow).Height = 20.0;
+            worksheet.Row(currentRow).Style.Alignment.Vertical = XLAlignmentVerticalValues.Center;
+
+            worksheet.Cell(currentRow, 1).Value = user.Id;
+            worksheet.Cell(currentRow, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+            worksheet.Cell(currentRow,1).Style.Font.FontColor = XLColor.Blue;
+
+            worksheet.Cell(currentRow, 2).Value = user.Name;
+            worksheet.Cell(currentRow,2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+
+            worksheet.Columns().AdjustToContents();
+        }
+
+        using var stream = new MemoryStream();
+        workbook.SaveAs(stream);
+        var content = stream.ToArray();
+
+        return File(content, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "users.xlsx");
+    }
 
 
 

@@ -346,3 +346,7 @@ D:\Bannaz Projects\MobileAPI\MobileManagementSystem\obj\Debug\net6.0\refint\Mobi
 D:\Bannaz Projects\MobileAPI\MobileManagementSystem\obj\Debug\net6.0\MobileManagementSystem.pdb
 D:\Bannaz Projects\MobileAPI\MobileManagementSystem\obj\Debug\net6.0\MobileManagementSystem.genruntimeconfig.cache
 D:\Bannaz Projects\MobileAPI\MobileManagementSystem\obj\Debug\net6.0\ref\MobileManagementSystem.dll
+D:\Bannaz Projects\MobileAPI\MobileManagementSystem\bin\Debug\net6.0\ClosedXML.dll
+D:\Bannaz Projects\MobileAPI\MobileManagementSystem\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+D:\Bannaz Projects\MobileAPI\MobileManagementSystem\bin\Debug\net6.0\ExcelNumberFormat.dll
+D:\Bannaz Projects\MobileAPI\MobileManagementSystem\bin\Debug\net6.0\System.IO.Packaging.dll
