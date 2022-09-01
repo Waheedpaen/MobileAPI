@@ -216,7 +216,8 @@ public  class UserRepository :  Reporsitory<User, int>, IUserRepository
 
     public async Task<EmailVerificationCode> verifyEmailCodeAndEmailCheck(string emailAddress)
     {
-        return await Context.Set<EmailVerificationCode>().Where(x => x.Email == emailAddress).FirstOrDefaultAsync();
+      var data = await Context.Set<EmailVerificationCode>().Where(x => x.Email == emailAddress).FirstOrDefaultAsync();
+        return data;
     }
 }
  

@@ -31,7 +31,7 @@ namespace EntitiesClasses.DataContext;
         modelBuilder.Entity<Mobile>().HasQueryFilter((d => EF.Property<bool>(d, "IsDeleted") == false));
         modelBuilder.Entity<MobileImage>().HasQueryFilter((d => EF.Property<bool>(d, "IsDeleted") == false));
         modelBuilder.Entity<User>().HasQueryFilter((d => EF.Property<bool>(d, "IsDeleted") == false));
-        modelBuilder.Entity<EmailVerificationCode>().HasQueryFilter((d => EF.Property<bool>(d, "IsDeleted") == false));
+ 
 
         modelBuilder.Entity<Brand>().HasQueryFilter((d => EF.Property<bool>(d, "IsDeleted") == false));
         modelBuilder.Entity<OperatingSystems>().HasQueryFilter((d => EF.Property<bool>(d, "IsDeleted") == false));
