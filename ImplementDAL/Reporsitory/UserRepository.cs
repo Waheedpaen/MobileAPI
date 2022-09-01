@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using ViewModel.ViewModels.UserViewModel;
@@ -197,6 +198,25 @@ public  class UserRepository :  Reporsitory<User, int>, IUserRepository
     public async Task<List<UserTypes>> GetUserTypes()
     {
         return await Context.Set<UserTypes>().ToListAsync();
+    }
+
+    public async Task<EmailVerificationCode> verifyEmailCodeAndEmail(EmailVerificationCode model)
+    {
+       
+        await Context.Set<EmailVerificationCode>().AddAsync(model);
+        return model;
+      
+    }
+
+    public async Task<User> UserEmailAlreadyExitForVerify(string emailAddress)
+    {
+        var data = await Context.Set<User>().Where(data => data.Email == emailAddress).FirstOrDefaultAsync();
+        return data;
+    }
+
+    public async Task<EmailVerificationCode> verifyEmailCodeAndEmailCheck(string emailAddress)
+    {
+        return await Context.Set<EmailVerificationCode>().Where(x => x.Email == emailAddress).FirstOrDefaultAsync();
     }
 }
  

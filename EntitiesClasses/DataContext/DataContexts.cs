@@ -18,9 +18,9 @@ namespace EntitiesClasses.DataContext;
     public DbSet<Color> Colors { get; set; }
     public DbSet<Carousel> Carousels { get; set; }
     public DbSet<User> Users { get; set; }
-    public DbSet<Order> orders { get; set; }
+     public DbSet<EmailVerificationCode> EmailVerificationCodes { get; set; }
+    public DbSet<Order>  Orders { get; set; }
     public DbSet<OrderDetail> OrderDetail { get; set; }
-
     public DbSet<UserTypes> UserTypes { get; set; }
     public DbSet<PaymentCard> PaymentCards { get; set; }
     public DbSet<OrderPayment> OrderPayments { get; set; }
@@ -31,7 +31,7 @@ namespace EntitiesClasses.DataContext;
         modelBuilder.Entity<Mobile>().HasQueryFilter((d => EF.Property<bool>(d, "IsDeleted") == false));
         modelBuilder.Entity<MobileImage>().HasQueryFilter((d => EF.Property<bool>(d, "IsDeleted") == false));
         modelBuilder.Entity<User>().HasQueryFilter((d => EF.Property<bool>(d, "IsDeleted") == false));
-
+        modelBuilder.Entity<EmailVerificationCode>().HasQueryFilter((d => EF.Property<bool>(d, "IsDeleted") == false));
 
         modelBuilder.Entity<Brand>().HasQueryFilter((d => EF.Property<bool>(d, "IsDeleted") == false));
         modelBuilder.Entity<OperatingSystems>().HasQueryFilter((d => EF.Property<bool>(d, "IsDeleted") == false));

@@ -17,6 +17,7 @@ namespace DataAccessLayer.Services;
      Task<int> GetUserCount();
     Task<bool> CheckUserNameExistence(string Name);
     Task<bool> UserEmailAlreadyExit(string Name);
+    Task<EmailVerificationCode> VerifyEmailCodeAndEmail(EmailVerificationCode model);
 
     Task<bool> UserPhoneAlreadyExit(string Name); 
     Task<User> UpdateUser(User update, User model);
@@ -24,5 +25,8 @@ namespace DataAccessLayer.Services;
     Task<List<User>> SearchingData(string name);
     Task<User> Delete(User model);
     Task<List<UserTypes>> GetUserTypes();
+    Task<User> UserEmailAlreadyExitForVerify(string emailAddress);
+    Task<EmailVerificationCode> verifyEmailCodeAndEmailCheck(string emailAddress);
+
 }
  

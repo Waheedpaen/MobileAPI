@@ -119,6 +119,12 @@ catch (Exception ex)
     {
        return await _unitOfWork.IUserRepository.UserEmailAlreadyExit(Name);
     }
+
+    public async Task<User> UserEmailAlreadyExitForVerify(string emailAddress)
+    {
+        return await _unitOfWork.IUserRepository.UserEmailAlreadyExitForVerify(emailAddress);
+    }
+
     public Task<bool> UserNameAlreadyExit(string Name)
     {
         throw new NotImplementedException();
@@ -126,6 +132,18 @@ catch (Exception ex)
     public Task<bool> UserPhoneAlreadyExit(string Name)
     {
         throw new NotImplementedException();
+    }
+
+    public async Task<EmailVerificationCode> VerifyEmailCodeAndEmail(EmailVerificationCode model)
+    {
+        var userData = await _unitOfWork.IUserRepository.verifyEmailCodeAndEmail(model);
+        await _unitOfWork.CommitAsync();
+        return model;
+    }
+
+    public async Task<EmailVerificationCode> verifyEmailCodeAndEmailCheck(string emailAddress)
+    {
+       return await _unitOfWork.IUserRepository.verifyEmailCodeAndEmailCheck(emailAddress);
     }
 }
  

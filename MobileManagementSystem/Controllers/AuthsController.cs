@@ -16,6 +16,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using ClosedXML.Excel;
+using System.Net.Mail;
+using HelperData;
 
 namespace MobileManagementSystem.Controllers
  ;
@@ -244,10 +246,79 @@ namespace MobileManagementSystem.Controllers
             return Ok(_response);
         }
     }
-   
+    [HttpGet("verifyEmailCodeAndEmail/{email}")]
+    public async Task<IActionResult> VerifyedEmailCodeAndEmail(string email)
+    {
+        MailMessage mm = new MailMessage();
+        SmtpClient smtp = new SmtpClient();
 
+        var objUsers = await _userService.UserEmailAlreadyExitForVerify(email);
+        if(objUsers != null)
+        {
 
+            if (objUsers.Email.Length > 0 && email.Trim() == objUsers.Email)
+            {
+                _response.Message = CustomMessage.EmailAlreadyExist;
+            }
+      
+        }
+        else
+        {
+            Random randomNumber = new Random();
+            var randomNumberString = randomNumber.Next(0, 9999).ToString("0000");
+            var ObjVerification = new EmailVerificationCode() {
+                Email = email,
+                Code = randomNumberString.ToInt32(),
+            };
+            await _userService.VerifyEmailCodeAndEmail(ObjVerification);
+            mm.From = new MailAddress("FabIntelLahore@gmail.com", "FabIntel", System.Text.Encoding.UTF8);
+            mm.To.Add(new MailAddress(email));
+            mm.Subject = "FabTime Email Verification Code  ";
+            mm.Body = "Your Verifcation Code is " + randomNumberString;
 
+            mm.IsBodyHtml = true;
+            smtp.Host = "smtp.gmail.com";
+
+            smtp.EnableSsl = true;
+            System.Net.NetworkCredential NetworkCred = new System.Net.NetworkCredential();
+            NetworkCred.UserName = "FabIntelLahore@gmail.com";//gmail user name
+            NetworkCred.Password = "oywmkwebtzlvmlrr";// password
+            smtp.UseDefaultCredentials = false;
+            smtp.Credentials = NetworkCred;
+            smtp.Port = 587; //Gmail port for e-mail 465 or 587
+            smtp.Send(mm);
+        }
+        return Ok(_response);
+    }
+    [HttpGet("verifyEmailCodeAndEmailCheck/{emailAddress}/{code}")]
+    public async Task<IActionResult> verifyEmailCodeAndEmailCheck(string emailAddress, int code)
+    {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        var objCode = await _userService.verifyEmailCodeAndEmailCheck(emailAddress);
+        if (objCode == null)
+        {
+
+            _response.Success = false;
+            _response.Message = "Email/ User Name does not exist";
+         
+        }
+        else
+        {
+            if (objCode.Code == code)
+            {
+                _response.Success = true;
+                _response.Message = "Code Verified";
+           
+            }
+        }
+
+        return Ok(_response);
+
+    }
 
 }
 

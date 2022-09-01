@@ -184,6 +184,26 @@ namespace EntitiesClasses.Migrations
                     b.ToTable("Countries");
                 });
 
+            modelBuilder.Entity("EntitiesClasses.Entities.EmailVerificationCode", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("Code")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EmailVerificationCodes");
+                });
+
             modelBuilder.Entity("EntitiesClasses.Entities.Mobile", b =>
                 {
                     b.Property<int>("Id")
@@ -403,7 +423,7 @@ namespace EntitiesClasses.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("orders");
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("EntitiesClasses.Entities.OrderDetail", b =>
