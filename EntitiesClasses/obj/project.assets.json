@@ -2415,11 +2415,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
+      "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
       "projectName": "EntitiesClasses",
-      "projectPath": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
+      "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
       "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-      "outputPath": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\obj\\",
+      "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",

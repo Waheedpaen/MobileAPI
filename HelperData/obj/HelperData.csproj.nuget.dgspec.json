@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj": {}
+    "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {}
   },
   "projects": {
-    "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj",
         "projectName": "HelperData",
-        "projectPath": "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "D:\\Bannaz Projects\\MobileAPI\\HelperData\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,4 +1,6 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
+
 namespace ImplementDAL.Reporsitory;
 
     public  class BrandRepository: Reporsitory<Brand,int>,IBrandRepository
@@ -8,6 +10,11 @@ namespace ImplementDAL.Reporsitory;
 
     }
     public DataContexts DataContexts => Context as DataContexts;
+
+    public async Task<Brand> BrandNameAlreadyExit(string name)
+    {
+       return await DataContexts.Set<Brand>().Where(data=>data.Name == name ).FirstOrDefaultAsync();
+    }
 
     public async Task<List<Brand>> SearchBrandData(string name)
     {

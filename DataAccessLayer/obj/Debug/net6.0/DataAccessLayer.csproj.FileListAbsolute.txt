@@ -74,3 +74,22 @@ D:\Bannaz Projects\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dl
 D:\Bannaz Projects\MobileAPI\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
 D:\Bannaz Projects\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
 D:\Bannaz Projects\MobileAPI\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\bin\Debug\net6.0\EntitiesClasses.dll
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\bin\Debug\net6.0\HelperData.dll
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\bin\Debug\net6.0\ViewModel.dll
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\bin\Debug\net6.0\EntitiesClasses.pdb
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\bin\Debug\net6.0\HelperData.pdb
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\bin\Debug\net6.0\ViewModel.pdb
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+E:\Mobile Managements Systems\MobileAPI\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll

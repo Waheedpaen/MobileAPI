@@ -58,3 +58,18 @@ D:\Bannaz Projects\MobileAPI\ViewModel\obj\Debug\net6.0\ViewModel.dll
 D:\Bannaz Projects\MobileAPI\ViewModel\obj\Debug\net6.0\refint\ViewModel.dll
 D:\Bannaz Projects\MobileAPI\ViewModel\obj\Debug\net6.0\ViewModel.pdb
 D:\Bannaz Projects\MobileAPI\ViewModel\obj\Debug\net6.0\ref\ViewModel.dll
+E:\Mobile Managements Systems\MobileAPI\ViewModel\bin\Debug\net6.0\ViewModel.deps.json
+E:\Mobile Managements Systems\MobileAPI\ViewModel\bin\Debug\net6.0\ViewModel.dll
+E:\Mobile Managements Systems\MobileAPI\ViewModel\bin\Debug\net6.0\ViewModel.pdb
+E:\Mobile Managements Systems\MobileAPI\ViewModel\bin\Debug\net6.0\EntitiesClasses.dll
+E:\Mobile Managements Systems\MobileAPI\ViewModel\bin\Debug\net6.0\EntitiesClasses.pdb
+E:\Mobile Managements Systems\MobileAPI\ViewModel\obj\Debug\net6.0\ViewModel.csproj.AssemblyReference.cache
+E:\Mobile Managements Systems\MobileAPI\ViewModel\obj\Debug\net6.0\ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mobile Managements Systems\MobileAPI\ViewModel\obj\Debug\net6.0\ViewModel.AssemblyInfoInputs.cache
+E:\Mobile Managements Systems\MobileAPI\ViewModel\obj\Debug\net6.0\ViewModel.AssemblyInfo.cs
+E:\Mobile Managements Systems\MobileAPI\ViewModel\obj\Debug\net6.0\ViewModel.csproj.CoreCompileInputs.cache
+E:\Mobile Managements Systems\MobileAPI\ViewModel\obj\Debug\net6.0\ViewModel.csproj.CopyComplete
+E:\Mobile Managements Systems\MobileAPI\ViewModel\obj\Debug\net6.0\ViewModel.dll
+E:\Mobile Managements Systems\MobileAPI\ViewModel\obj\Debug\net6.0\refint\ViewModel.dll
+E:\Mobile Managements Systems\MobileAPI\ViewModel\obj\Debug\net6.0\ViewModel.pdb
+E:\Mobile Managements Systems\MobileAPI\ViewModel\obj\Debug\net6.0\ref\ViewModel.dll

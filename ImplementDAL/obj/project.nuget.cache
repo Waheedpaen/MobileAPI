@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RUcOVpbc9BP7OAR7ZoXuP+ZAMW1/rbjKAwvnOhy7zS1ftFmKfiz0DmmEGXtULdaaeFC5SGeX4cjaoY4iFJjuzA==",
+  "dgSpecHash": "odkyGz8julIJ0qAoW05iZXmtfij4bcIZu1LWuiRM0gfcz/jUCnFiiGaZP/nfwL5VldNtDYd9XK8OVAN+Ckprdw==",
   "success": true,
-  "projectFilePath": "D:\\Bannaz Projects\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj",
+  "projectFilePath": "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Waheed\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Waheed\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

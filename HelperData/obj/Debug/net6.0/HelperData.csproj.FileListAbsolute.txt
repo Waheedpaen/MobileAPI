@@ -46,3 +46,15 @@ D:\Bannaz Projects\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.dll
 D:\Bannaz Projects\MobileAPI\HelperData\obj\Debug\net6.0\refint\HelperData.dll
 D:\Bannaz Projects\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.pdb
 D:\Bannaz Projects\MobileAPI\HelperData\obj\Debug\net6.0\ref\HelperData.dll
+E:\Mobile Managements Systems\MobileAPI\HelperData\bin\Debug\net6.0\HelperData.deps.json
+E:\Mobile Managements Systems\MobileAPI\HelperData\bin\Debug\net6.0\HelperData.dll
+E:\Mobile Managements Systems\MobileAPI\HelperData\bin\Debug\net6.0\HelperData.pdb
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.csproj.AssemblyReference.cache
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.AssemblyInfoInputs.cache
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.AssemblyInfo.cs
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.csproj.CoreCompileInputs.cache
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.dll
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net6.0\refint\HelperData.dll
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net6.0\HelperData.pdb
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net6.0\ref\HelperData.dll

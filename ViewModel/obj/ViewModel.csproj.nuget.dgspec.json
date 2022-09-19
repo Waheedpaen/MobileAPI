@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj": {}
+    "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj": {}
   },
   "projects": {
-    "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
         "projectName": "EntitiesClasses",
-        "projectPath": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -107,14 +107,14 @@
         }
       }
     },
-    "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj",
         "projectName": "ViewModel",
-        "projectPath": "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -131,8 +131,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
-                "projectPath": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
               }
             }
           }

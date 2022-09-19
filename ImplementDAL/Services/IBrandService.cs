@@ -16,6 +16,12 @@ namespace ImplementDAL.Services
             _logger = logger;
             _unitOfWork = unitOfWork;
         }
+
+        public async Task<Brand> BrandNameAlreadyExit(string name)
+        {
+             return await _unitOfWork.BrandRepository.BrandNameAlreadyExit(name);
+        }
+
         public async Task<Brand> Create(Brand model)
         {
             

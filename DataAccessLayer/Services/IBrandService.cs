@@ -10,5 +10,6 @@
     Task<Brand> Update(Brand update, Brand model);
      Task<List<Brand>> SearchBrandData(string name);
     Task<Brand> Delete(Brand model);
+    Task<Brand> BrandNameAlreadyExit(string name);
 }
  

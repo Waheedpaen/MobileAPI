@@ -82,3 +82,24 @@ D:\Bannaz Projects\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.dll
 D:\Bannaz Projects\MobileAPI\ImplementDAL\obj\Debug\net6.0\refint\ImplementDAL.dll
 D:\Bannaz Projects\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.pdb
 D:\Bannaz Projects\MobileAPI\ImplementDAL\obj\Debug\net6.0\ref\ImplementDAL.dll
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\bin\Debug\net6.0\ImplementDAL.deps.json
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\bin\Debug\net6.0\ImplementDAL.dll
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\bin\Debug\net6.0\ImplementDAL.pdb
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\bin\Debug\net6.0\DataAccessLayer.dll
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\bin\Debug\net6.0\EntitiesClasses.dll
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\bin\Debug\net6.0\HelperData.dll
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\bin\Debug\net6.0\ViewModel.dll
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\bin\Debug\net6.0\DataAccessLayer.pdb
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\bin\Debug\net6.0\HelperData.pdb
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\bin\Debug\net6.0\ViewModel.pdb
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\bin\Debug\net6.0\EntitiesClasses.pdb
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.csproj.AssemblyReference.cache
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.AssemblyInfoInputs.cache
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.AssemblyInfo.cs
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.csproj.CoreCompileInputs.cache
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.csproj.CopyComplete
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.dll
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\obj\Debug\net6.0\refint\ImplementDAL.dll
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\obj\Debug\net6.0\ImplementDAL.pdb
+E:\Mobile Managements Systems\MobileAPI\ImplementDAL\obj\Debug\net6.0\ref\ImplementDAL.dll

@@ -83,14 +83,25 @@ public class BrandController : BaseController
         [HttpPost("SaveBrand")]
         public async Task<IActionResult> SaveBrand(BrandDto brandDto)
         {
-        if (!ModelState.IsValid) return BadRequest(ModelState);
-          var BrandDto = _mapper.Map<Brand>(brandDto);
-        await _brandService.Create(BrandDto); 
-         _response.Success=true;
-        _response.Message = CustomMessage.Added;
+        var BrandDto = _mapper.Map<Brand>(brandDto);
+        var brandNameAlreadyExit = await _brandService.BrandNameAlreadyExit(brandDto.Name);
+        if (brandNameAlreadyExit != null)
+        {
+            _response.Success = false;
+            _response.Message = "Data Already Exists ";
+            return Ok(_response);
 
-        return Ok(_response);
         }
+        else
+        {
+            await _brandService.Create(BrandDto);
+            _response.Success = true;
+            _response.Message = CustomMessage.Added;
+
+            return Ok(_response);
+        }
+    }
+
 
         [HttpPost("SaveBrandListExcel")]
         public async Task<IActionResult> SaveBrandExcel(List<BrandDto> brands)

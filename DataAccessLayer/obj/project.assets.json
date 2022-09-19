@@ -5400,11 +5400,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bannaz Projects\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "D:\\Bannaz Projects\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-      "outputPath": "D:\\Bannaz Projects\\MobileAPI\\DataAccessLayer\\obj\\",
+      "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5421,14 +5421,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
-              "projectPath": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
+            "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+              "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
             },
-            "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj": {
-              "projectPath": "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj"
+            "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {
+              "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj"
             },
-            "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj": {
-              "projectPath": "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj"
+            "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+              "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj"
             }
           }
         }

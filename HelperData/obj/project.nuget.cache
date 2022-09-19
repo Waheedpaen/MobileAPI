@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KGKCGRNvIk5ColB7m8QCoqdlSsPS2Bc8doKSlwaYEUIf58n1oQOKM7uCUVOK2DbCEBNwuTz0+lPE6uYMG4XzBA==",
+  "dgSpecHash": "YYu4e2XEwcQgLxEd2VhNlT9JG1obX3HLqa8/VQx2DUdKWejWMFsp0Vy0PRJRSxiNV9L9ptjI/umvMTTcG7+vUw==",
   "success": true,
-  "projectFilePath": "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj",
+  "projectFilePath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Waheed\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Waheed\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

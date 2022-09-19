@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bannaz Projects\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj": {}
+    "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj": {}
   },
   "projects": {
-    "D:\\Bannaz Projects\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bannaz Projects\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "D:\\Bannaz Projects\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "D:\\Bannaz Projects\\MobileAPI\\DataAccessLayer\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
-                "projectPath": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
               },
-              "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj": {
-                "projectPath": "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj"
               },
-              "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj": {
-                "projectPath": "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
         "projectName": "EntitiesClasses",
-        "projectPath": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -186,14 +186,14 @@
         }
       }
     },
-    "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj",
         "projectName": "HelperData",
-        "projectPath": "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "D:\\Bannaz Projects\\MobileAPI\\HelperData\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -269,14 +269,14 @@
         }
       }
     },
-    "D:\\Bannaz Projects\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bannaz Projects\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj",
         "projectName": "ImplementDAL",
-        "projectPath": "D:\\Bannaz Projects\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "D:\\Bannaz Projects\\MobileAPI\\ImplementDAL\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -293,14 +293,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Bannaz Projects\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "D:\\Bannaz Projects\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj": {
-                "projectPath": "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj"
               },
-              "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj": {
-                "projectPath": "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj"
               }
             }
           }
@@ -354,14 +354,14 @@
         }
       }
     },
-    "D:\\Bannaz Projects\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bannaz Projects\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj",
         "projectName": "MobileManagementSystem",
-        "projectPath": "D:\\Bannaz Projects\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "D:\\Bannaz Projects\\MobileAPI\\MobileManagementSystem\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -378,17 +378,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Bannaz Projects\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "D:\\Bannaz Projects\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj": {
-                "projectPath": "D:\\Bannaz Projects\\MobileAPI\\HelperData\\HelperData.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj"
               },
-              "D:\\Bannaz Projects\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj": {
-                "projectPath": "D:\\Bannaz Projects\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj"
               },
-              "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj": {
-                "projectPath": "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj"
               }
             }
           }
@@ -471,14 +471,14 @@
         }
       }
     },
-    "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj",
         "projectName": "ViewModel",
-        "projectPath": "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\ViewModel.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "D:\\Bannaz Projects\\MobileAPI\\ViewModel\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -495,8 +495,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
-                "projectPath": "D:\\Bannaz Projects\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
               }
             }
           }
