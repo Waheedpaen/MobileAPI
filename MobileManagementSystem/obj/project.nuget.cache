@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RVQ+AMSGZPwpv1Z7DdG9MhyMnBYW0P+aIjEu52gWV7+L2N0s1jpKjopaGddIUYF5damkrgXkPZ8CZvrPO5IbfQ==",
+  "dgSpecHash": "zoulYpM5ZCKaO81kVM8T9fH4xvZG63hHNgS5E4vYpPkWkP6lBk1Z1FcJ/hL0J++gv2bn+vVDsZF3q8/hBRB1KQ==",
   "success": true,
   "projectFilePath": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\MobileManagementSystem.csproj",
   "expectedPackageFiles": [
@@ -125,11 +125,7 @@
     "C:\\Users\\Waheed\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
     "C:\\Users\\Waheed\\.nuget\\packages\\system.threading.tasks\\4.0.11\\system.threading.tasks.4.0.11.nupkg.sha512",
     "C:\\Users\\Waheed\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512",
-    "C:\\Users\\Waheed\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\Waheed\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.7\\microsoft.netcore.app.host.win-x64.6.0.7.nupkg.sha512",
-    "C:\\Users\\Waheed\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.7\\microsoft.aspnetcore.app.ref.6.0.7.nupkg.sha512",
-    "C:\\Users\\Waheed\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.7\\microsoft.windowsdesktop.app.ref.6.0.7.nupkg.sha512",
-    "C:\\Users\\Waheed\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.7\\microsoft.netcore.app.ref.6.0.7.nupkg.sha512"
+    "C:\\Users\\Waheed\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

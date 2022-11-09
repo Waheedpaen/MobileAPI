@@ -1,5 +1,8 @@
 ﻿
 
+using ViewModel.ViewModels.BrandViewModel;
+using ViewModel.ViewModels.OperatingSystemViewModel;
+
 namespace MobileManagementSystem.Controllers;
  
     [Route("api/[controller]")]
@@ -79,12 +82,25 @@ public class OperatingSystemController : BaseController
       [HttpPost("SaveOperatingSystemData")]
       public async Task<IActionResult> SaveOperatingSystemData(OperatingSystemDto operatingSystemDto)
      {
-        if (!ModelState.IsValid) return BadRequest(ModelState);
-        var operatingSystemsDto = _mapper.Map<OperatingSystems>(operatingSystemDto);
-        await _operatingSystemService.Create(operatingSystemsDto);
-        _response.Success = true;
-        _response.Message = CustomMessage.Added;
-        return Ok(_response);
+        var operatingSystemalreadyExit = await _operatingSystemService.OperatingSystemAlreadyExit(operatingSystemDto.Name);
+        if (operatingSystemalreadyExit != null)
+        {
+            _response.Success = false;
+            _response.Message = operatingSystemalreadyExit.Name + ' ' + "Already Exist";
+            return Ok(_response);
+
+        }
+        else
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var operatingSystemsDto = _mapper.Map<OperatingSystems>(operatingSystemDto);
+            await _operatingSystemService.Create(operatingSystemsDto);
+            _response.Success = true;
+            _response.Message = CustomMessage.Added;
+            return Ok(_response);
+        }
+
+
      }
 
       [HttpPut("UpdateOperatingSystemData")]
@@ -92,20 +108,33 @@ public class OperatingSystemController : BaseController
     {
         if (!ModelState.IsValid) return BadRequest(ModelState);
         var operatingSystemEntity = _mapper.Map<OperatingSystems>(OperatingSystemDto);
-        var objOS = await _operatingSystemService.Get(operatingSystemEntity.Id);
-        if (objOS != null)
+
+        var operatingSystemalreadyExit = await _operatingSystemService.OperatingSystemAlreadyExit(operatingSystemEntity.Name);
+        if (operatingSystemalreadyExit != null)
         {
-            await _operatingSystemService.Update(objOS, operatingSystemEntity);
-            _response.Success = true;
-            _response.Message = CustomMessage.Updated; ;
+            _response.Success = false;
+            _response.Message = operatingSystemalreadyExit.Name + ' ' + "Already Exist";
             return Ok(_response);
+
         }
         else
         {
-            _response.Success=false; ;
-            _response.Message = CustomMessage.RecordNotFound;
-            return Ok(_response);
+            var objOS = await _operatingSystemService.Get(operatingSystemEntity.Id);
+            if (objOS != null)
+            {
+                await _operatingSystemService.Update(objOS, operatingSystemEntity);
+                _response.Success = true;
+                _response.Message = CustomMessage.Updated; ;
+                return Ok(_response);
+            }
+            else
+            {
+                _response.Success = false; ;
+                _response.Message = CustomMessage.RecordNotFound;
+                return Ok(_response);
+            }
         }
+        
     }
       [HttpGet("SearchData/{Name}")]
       public async Task<IActionResult> SearchOperatingSystem(string Name)

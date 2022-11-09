@@ -455,3 +455,4 @@ E:\Mobile Managements Systems\MobileAPI\MobileManagementSystem\obj\Debug\net6.0\
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystem\obj\Debug\net6.0\MobileManagementSystem.pdb
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystem\obj\Debug\net6.0\MobileManagementSystem.genruntimeconfig.cache
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystem\obj\Debug\net6.0\ref\MobileManagementSystem.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystem\bin\Debug\net6.0\MobileManagementSystem.staticwebassets.runtime.json

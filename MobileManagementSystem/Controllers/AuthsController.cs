@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.Authorization;
 using ClosedXML.Excel;
 using System.Net.Mail;
 using HelperData;
+using ViewModel.ViewModel.ColorViewModel;
 
 namespace MobileManagementSystem.Controllers
  ;
@@ -202,8 +203,52 @@ namespace MobileManagementSystem.Controllers
                 return Ok(_response);
             }
         }
+    [HttpGet("ColorGetAll")]
+    public async Task<IActionResult> ColorGetAll()
+    {
+        var data =  await _userService.ColorGetAll();
+        //var dataDto = _mapper.Map<ColorProject>(data);
+        if (data != null)
+        {
+            _response.Data = data;  
+            _response.Success = true;
+            return Ok(_response);
 
-        [HttpPut("UpdateUser")]
+        }
+        else
+        {
+            _response.Data = null;
+            _response.Success = false;
+            return Ok(_response);
+        }
+    }
+ 
+
+
+
+    [HttpPut("UpdateColor")]
+    public async Task<IActionResult> UpdateColor(ColorProjectDto model)
+    {
+        if (!ModelState.IsValid) return BadRequest(ModelState);
+        var modelEntity = _mapper.Map<ColorProject>(model);
+        var obj = await _userService.ColorGet(modelEntity.Id);
+        if (obj != null)
+        {
+            await _userService.UpdateColor(obj, modelEntity);
+            _response.Success = true;
+            _response.Message = CustomMessage.Updated;
+            return Ok(_response);
+        }
+        else
+        {
+            _response.Success = false;
+            _response.Message = CustomMessage.RecordNotFound;
+            return Ok(_response);
+        }
+
+    }
+
+    [HttpPut("UpdateUser")]
         public async Task<IActionResult> UpdateUser(UserUpdateDto model)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);

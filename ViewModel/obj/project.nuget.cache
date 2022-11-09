@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Pcbi2uRJhgzg+CFUJp/BJaw1JHGOcvoGngkn7vfNjt8CZCgSv00Mp8RxbOJDOwNJVhNK/1oJ7xhbty2m08p1DA==",
+  "dgSpecHash": "Sb2nBR9wwy/zgRkQphVQVBMsK07NxHLPeWoEZxc+X/OE9hOz7id6QIErC/2AfeEq53v4V46bl6HWFH/mrzxtcg==",
   "success": true,
   "projectFilePath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj",
   "expectedPackageFiles": [
@@ -56,10 +56,7 @@
     "C:\\Users\\Waheed\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\Waheed\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\Waheed\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "C:\\Users\\Waheed\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\Waheed\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.7\\microsoft.aspnetcore.app.ref.6.0.7.nupkg.sha512",
-    "C:\\Users\\Waheed\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.7\\microsoft.windowsdesktop.app.ref.6.0.7.nupkg.sha512",
-    "C:\\Users\\Waheed\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.7\\microsoft.netcore.app.ref.6.0.7.nupkg.sha512"
+    "C:\\Users\\Waheed\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

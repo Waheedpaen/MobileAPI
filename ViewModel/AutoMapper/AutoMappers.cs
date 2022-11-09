@@ -1,9 +1,10 @@
 ﻿
 
+using ViewModel.ViewModel.ColorViewModel;
 using ViewModel.ViewModels.UserViewModel;
 
 namespace ViewModel.AutoMapper;
-    public class AutoMappers : Profile
+public class AutoMappers : Profile
     {
     public AutoMappers()
     {
@@ -28,6 +29,7 @@ namespace ViewModel.AutoMapper;
         CreateMap<User, UserListDto>().ReverseMap();
         CreateMap<User, UserUpdateDto>().ReverseMap();
         CreateMap<User, UserListDto>().ReverseMap();
+        CreateMap<ColorProject, ColorProjectDto>().ReverseMap();
         //CreateMap<User, UserListDto>()
         //       .ForMember(dest =>
         //       dest.Name,

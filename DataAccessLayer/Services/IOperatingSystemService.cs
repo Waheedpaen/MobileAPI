@@ -8,6 +8,7 @@
     Task<OperatingSystems> Create(OperatingSystems model);
     Task<OperatingSystems> Update(OperatingSystems update, OperatingSystems model);
     Task<OperatingSystems> Delete(OperatingSystems model);
-    Task<List<OperatingSystems>> SearchOperatingSystemsData(string name); 
+    Task<List<OperatingSystems>> SearchOperatingSystemsData(string name);
+     Task<OperatingSystems> OperatingSystemAlreadyExit(string name);
 }
  

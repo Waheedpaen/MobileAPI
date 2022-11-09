@@ -1,11 +1,88 @@
 {
   "Version": 1,
-  "Hash": "QPb1+WKTKtbHyvWNf1llXBZogC3VBpCoU2Yz/pMk3RE=",
+  "Hash": "WHF9aj3qbmgQPZQ66190bT1DIwLBQ+KjAm+IlrhgZig=",
   "Source": "MobileManagementSystem",
   "BasePath": "_content/MobileManagementSystem",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "MobileManagementSystem\\wwwroot",
+      "Source": "MobileManagementSystem",
+      "ContentRoot": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\wwwroot\\",
+      "BasePath": "_content/MobileManagementSystem",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\wwwroot\\images\\311db596-56be-40a6-a7b8-5f79abb75081.jfif",
+      "SourceId": "MobileManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\wwwroot\\",
+      "BasePath": "_content/MobileManagementSystem",
+      "RelativePath": "images/311db596-56be-40a6-a7b8-5f79abb75081.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\311db596-56be-40a6-a7b8-5f79abb75081.jfif"
+    },
+    {
+      "Identity": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\wwwroot\\images\\982721f1-8358-4960-bc38-0ab1c8fbddfc.jfif",
+      "SourceId": "MobileManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\wwwroot\\",
+      "BasePath": "_content/MobileManagementSystem",
+      "RelativePath": "images/982721f1-8358-4960-bc38-0ab1c8fbddfc.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\982721f1-8358-4960-bc38-0ab1c8fbddfc.jfif"
+    },
+    {
+      "Identity": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\wwwroot\\images\\a79cddd0-e36c-432e-a107-3b0bd0faeab2.jfif",
+      "SourceId": "MobileManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\wwwroot\\",
+      "BasePath": "_content/MobileManagementSystem",
+      "RelativePath": "images/a79cddd0-e36c-432e-a107-3b0bd0faeab2.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a79cddd0-e36c-432e-a107-3b0bd0faeab2.jfif"
+    },
+    {
+      "Identity": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\wwwroot\\images\\f1de45c0-e790-4147-a09b-e0eeec50f0c1.jfif",
+      "SourceId": "MobileManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystem\\wwwroot\\",
+      "BasePath": "_content/MobileManagementSystem",
+      "RelativePath": "images/f1de45c0-e790-4147-a09b-e0eeec50f0c1.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\f1de45c0-e790-4147-a09b-e0eeec50f0c1.jfif"
+    }
+  ]
 }

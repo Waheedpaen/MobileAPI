@@ -1,7 +1,9 @@
 ﻿
 
+using ViewModel.ViewModel.ColorViewModel;
+
 namespace ViewModel.ViewModels.MobileViewModel;
-   public class MobileDtoForList : CommonClass
+public class MobileDtoForList : CommonClass
     {
     public MobileDtoForList()
     {

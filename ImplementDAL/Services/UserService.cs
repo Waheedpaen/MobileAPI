@@ -145,5 +145,23 @@ catch (Exception ex)
     {
        return await _unitOfWork.IUserRepository.verifyEmailCodeAndEmailCheck(emailAddress);
     }
+
+    public async Task<List<ColorProject>> ColorGetAll()
+    {
+        return await _unitOfWork.IUserRepository.ColorGetAll();
+    }
+    public async Task<ColorProject> UpdateColor(ColorProject update, ColorProject model)
+    {
+     
+            update.Name = model.Name;
+            update.Name = model.Name; 
+            await _unitOfWork.CommitAsync();
+            return update;
+    }
+
+    public async Task<ColorProject> ColorGet(int Id)
+    {
+        return await _unitOfWork.IUserRepository.ColorGet(Id);
+    }
 }
  

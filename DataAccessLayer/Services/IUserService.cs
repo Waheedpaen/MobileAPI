@@ -9,6 +9,7 @@ namespace DataAccessLayer.Services;
      {
       Task<User> Logout();
     Task<LoginUserDto> Login(UserDtoLogin model);
+
     Task<ServiceResponse<object>> AddUser(UserAddDto model);
     Task<bool> UserAlreadyExit(string Name);
     Task<bool> UserNameAlreadyExit(string Name);
@@ -27,6 +28,10 @@ namespace DataAccessLayer.Services;
     Task<List<UserTypes>> GetUserTypes();
     Task<User> UserEmailAlreadyExitForVerify(string emailAddress);
     Task<EmailVerificationCode> verifyEmailCodeAndEmailCheck(string emailAddress);
+    public Task<ColorProject> UpdateColor(ColorProject update, ColorProject model);
+    public Task<List<ColorProject>> ColorGetAll();
+    Task<ColorProject> ColorGet(int Id);
+
 
 }
  

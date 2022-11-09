@@ -219,5 +219,15 @@ public  class UserRepository :  Reporsitory<User, int>, IUserRepository
       var data = await Context.Set<EmailVerificationCode>().Where(x => x.Email == emailAddress).FirstOrDefaultAsync();
         return data;
     }
+
+    public async Task<List<ColorProject>> ColorGetAll()
+    {
+      return await Context.Set<ColorProject>().ToListAsync();
+    }
+
+    public async Task<ColorProject> ColorGet(int Id)
+    {
+        return await Context.Set<ColorProject>().Where(data => data.Id == Id).FirstOrDefaultAsync();
+    }
 }
  

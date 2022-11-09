@@ -2,6 +2,9 @@
 
 
 using ClosedXML.Excel;
+using HelperData;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Hosting.Internal;
 
 namespace MobileManagementSystem.Controllers;
  
@@ -10,18 +13,31 @@ namespace MobileManagementSystem.Controllers;
 public class BrandController : BaseController
 { 
         private readonly IMapper _mapper;
+    private readonly IConfiguration _configuration;
     private readonly IBrandService _brandService;
-        public BrandController(IBrandService brandService, IMapper mapper)
+    private readonly IWebHostEnvironment _hostEnvironment;
+    public BrandController(IBrandService brandService, IMapper mapper, IWebHostEnvironment HostEnvironment, IConfiguration configuration)
         {
-              _brandService = brandService; 
-             _mapper = mapper;
-        }
+              _brandService = brandService;
+        _configuration = configuration;
+        _mapper = mapper;
+        _hostEnvironment = HostEnvironment;
+    }
 
         [HttpGet("BrandList")]
         public async Task<IActionResult> GetBrandList()
         {
         if (!ModelState.IsValid) return BadRequest(ModelState);
         var listBrand = await _brandService.Get();
+        //List<BrandDto> brands = new  ();
+        //foreach (var item in listBrand)
+        //{
+        //    var obj = new  BrandDto();
+        //    obj.Name = item.Name;
+        //    obj.FullPath =    "images" + '/' + item.ImageUrl;
+        //    brands.Add(obj);
+         
+        //}
 
        var brandDto =      _mapper.Map<List<BrandDto>>(listBrand);
 
@@ -88,7 +104,7 @@ public class BrandController : BaseController
         if (brandNameAlreadyExit != null)
         {
             _response.Success = false;
-            _response.Message = "Data Already Exists ";
+            _response.Message = brandNameAlreadyExit.Name + ' ' + "Already Exist";
             return Ok(_response);
 
         }
@@ -101,9 +117,44 @@ public class BrandController : BaseController
             return Ok(_response);
         }
     }
+    [HttpPost("SaveBrands")]
+    public async Task<IActionResult> SaveBrands([FromForm] BrandDto brandDto)
+    {
+    
+     
+        var brandNameAlreadyExit = await _brandService.BrandNameAlreadyExit(brandDto.Name);
+        if (brandNameAlreadyExit != null)
+        {
+            _response.Success = false;
+            _response.Message = brandNameAlreadyExit.Name + ' ' + "Already Exist";
+            return Ok(_response);
+
+        }
+        else
+        {
+            //string uniqueFileName = null;
+            //var BrandDto = _mapper.Map<Brand>(brandDto);
+            //string uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "images");
+            //uniqueFileName = Guid.NewGuid() + Path.GetExtension(brandDto.Photo.FileName);
+            //string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+            //using (var fileStream = new FileStream(filePath, FileMode.Create))
+            //{
+            //    brandDto.Photo.CopyTo(fileStream);
+            //}
+            //var objEntity = new Brand();
+            //objEntity.Name = brandDto.Name;
+            //objEntity.ImageUrl = uniqueFileName;
+            //objEntity.Created_At = brandDto.Created_At;
+            //await _brandService.Create(objEntity);
+            //_response.Success = true;
+            //_response.Message = CustomMessage.Added;
+
+            return Ok(_response);
+        }
+    }
 
 
-        [HttpPost("SaveBrandListExcel")]
+    [HttpPost("SaveBrandListExcel")]
         public async Task<IActionResult> SaveBrandExcel(List<BrandDto> brands)
     {
         if (!ModelState.IsValid) return BadRequest(ModelState);
@@ -122,20 +173,31 @@ public class BrandController : BaseController
        {
         if(!ModelState.IsValid) return BadRequest(ModelState);
         var  BrandEntity = _mapper.Map<Brand>(brandDto);
-        var obj = await _brandService.Get(BrandEntity.Id);
-        if(obj != null)
+        var brandNameAlreadyExit = await _brandService.BrandNameAlreadyExit(brandDto.Name);
+        if(brandNameAlreadyExit != null)
         {
-            await _brandService.Update(obj, BrandEntity);
-            _response.Success = true;
-            _response.Message = CustomMessage.Updated;
+            _response.Success = false;
+            _response.Message = brandNameAlreadyExit.Name + ' ' + "Already Exist";
             return Ok(_response);
         }
         else
         {
-            _response.Success = false;
-            _response.Message = CustomMessage.RecordNotFound;
-            return Ok(_response);
+            var obj = await _brandService.Get(BrandEntity.Id);
+            if (obj != null)
+            {
+                await _brandService.Update(obj, BrandEntity);
+                _response.Success = true;
+                _response.Message = CustomMessage.Updated;
+                return Ok(_response);
+            }
+            else
+            {
+                _response.Success = false;
+                _response.Message = CustomMessage.RecordNotFound;
+                return Ok(_response);
+            }
         }
+
         }
         [HttpGet("SearchData/{Name}")]
         public async Task<IActionResult> SearchBrandData(string Name)

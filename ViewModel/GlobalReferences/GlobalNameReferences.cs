@@ -10,7 +10,7 @@ global using ViewModel.ViewModels.BrandViewModel;
 global using ViewModel.ViewModels.MobileImageViewModel;
 global using ViewModel.ViewModels.CountryViewModel; 
 global using ViewModel.ViewModels.OperatingSystemViewModel; 
-global  using ViewModel.ViewModels.ColorViewModel;
+ 
 global using ViewModel.ViewModels.OSVersionViewModel;
 global using  AutoMapper;
 global  using EntitiesClasses.Entities;
@@ -18,3 +18,4 @@ global  using ViewModel.ViewModels.CarouselViewModel;
 global  using ViewModel.ViewModels.CityViewModel;
 global  using ViewModel.ViewModels.MobileViewModel;
 global using ViewModel.ViewModels.PaymentCardViewModel;
+global using Microsoft.AspNetCore.Http;

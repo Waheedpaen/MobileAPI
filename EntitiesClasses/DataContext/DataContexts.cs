@@ -16,6 +16,7 @@ namespace EntitiesClasses.DataContext;
     public DbSet<Mobile> Mobiles { get; set; }
     public DbSet<MobileImage > MobileImages { get; set; }   
     public DbSet<Color> Colors { get; set; }
+    public DbSet<ColorProject> ColorProjects { get; set; }
     public DbSet<Carousel> Carousels { get; set; }
     public DbSet<User> Users { get; set; }
      public DbSet<EmailVerificationCode> EmailVerificationCodes { get; set; }

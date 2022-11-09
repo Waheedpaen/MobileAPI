@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "odkyGz8julIJ0qAoW05iZXmtfij4bcIZu1LWuiRM0gfcz/jUCnFiiGaZP/nfwL5VldNtDYd9XK8OVAN+Ckprdw==",
+  "dgSpecHash": "UAyb54I83aFILMe46W56MHHY1ZNoUzpTOacmYPZ9EIgm/NkySIF3sScgb2jEjGW5YP6i1v/Xxw8fAjVTsC1OPA==",
   "success": true,
   "projectFilePath": "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj",
   "expectedPackageFiles": [
@@ -111,10 +111,7 @@
     "C:\\Users\\Waheed\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
     "C:\\Users\\Waheed\\.nuget\\packages\\system.threading.tasks\\4.0.11\\system.threading.tasks.4.0.11.nupkg.sha512",
     "C:\\Users\\Waheed\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512",
-    "C:\\Users\\Waheed\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\Waheed\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.7\\microsoft.aspnetcore.app.ref.6.0.7.nupkg.sha512",
-    "C:\\Users\\Waheed\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.7\\microsoft.windowsdesktop.app.ref.6.0.7.nupkg.sha512",
-    "C:\\Users\\Waheed\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.7\\microsoft.netcore.app.ref.6.0.7.nupkg.sha512"
+    "C:\\Users\\Waheed\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

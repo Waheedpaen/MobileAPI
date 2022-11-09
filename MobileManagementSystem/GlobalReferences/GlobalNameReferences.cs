@@ -11,7 +11,7 @@ global using ViewModel.ViewModels.BrandViewModel;
 global using ViewModel.ViewModels.MobileImageViewModel;
 global using ViewModel.ViewModels.CountryViewModel;
 global using ViewModel.ViewModels.OperatingSystemViewModel;
-global using ViewModel.ViewModels.ColorViewModel;
+ 
 global using ViewModel.ViewModels.OSVersionViewModel;
 global using AutoMapper;
 global using EntitiesClasses.Entities;
@@ -25,3 +25,4 @@ global using Microsoft.AspNetCore.Mvc;
 global using DataAccessLayer.Services;
 global  using Microsoft.AspNetCore.Authorization;
 global  using ViewModel.ViewModels.OtherDtos;
+global using Microsoft.AspNetCore.Http;

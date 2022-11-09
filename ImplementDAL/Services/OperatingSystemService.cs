@@ -43,6 +43,12 @@ public class OperatingSystemService : IOperatingSystemService
     {
         return await _unitOfWork.OperatingSytemRepository.GetByIdAsync(id);
     }
+
+    public async Task<OperatingSystems> OperatingSystemAlreadyExit(string name)
+    {
+        return await _unitOfWork.OperatingSytemRepository.OperatingSystemAlreadyExit(name);
+    }
+
     public async Task<List<OperatingSystems>> SearchOperatingSystemsData(string name)
     {
        return await _unitOfWork.OperatingSytemRepository.SearchOperatingSystemData(name);

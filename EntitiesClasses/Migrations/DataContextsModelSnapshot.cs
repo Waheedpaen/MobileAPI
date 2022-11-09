@@ -150,6 +150,32 @@ namespace EntitiesClasses.Migrations
                     b.ToTable("Colors");
                 });
 
+            modelBuilder.Entity("EntitiesClasses.Entities.ColorProject", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime?>("Created_At")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<DateTime?>("Updated_At")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ColorProjects");
+                });
+
             modelBuilder.Entity("EntitiesClasses.Entities.Country", b =>
                 {
                     b.Property<int>("Id")
