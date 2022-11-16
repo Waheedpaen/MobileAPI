@@ -26,3 +26,16 @@ global using DataAccessLayer.Services;
 global  using Microsoft.AspNetCore.Authorization;
 global  using ViewModel.ViewModels.OtherDtos;
 global using Microsoft.AspNetCore.Http;
+
+global using DataAccessLayer.ILoggerManager;
+global using DataAccessLayer.IUnitofWork;
+global using DataAccessLayer.Services;
+global using EntitiesClasses.DataContext;
+global using ImplementDAL.LoggerManager;
+global using ImplementDAL.Services;
+global using ImplementDAL.UnitWorks;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.IdentityModel.Tokens;
+global using Microsoft.OpenApi.Models;
+global using MobileManagementSystem.Extension;

@@ -1,17 +1,5 @@
 
 
-using DataAccessLayer.ILoggerManager;
-using DataAccessLayer.IUnitofWork;
-using DataAccessLayer.Services;
-using EntitiesClasses.DataContext;
-using ImplementDAL.LoggerManager;
-using ImplementDAL.Services;
-using ImplementDAL.UnitWorks;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -67,10 +55,10 @@ builder.Services.AddAuthentication(options => {
         ValidateLifetime = bool.Parse(builder.Configuration["JsonWebTokenKeys:ValidateLifetime"])
     };
 });
-var configuration = builder.Configuration; 
+var configuration = builder.Configuration;
 
 
-
+builder.Services.AddDependencies();
 
 
 
@@ -89,20 +77,12 @@ ConfigurationManager Configuration = builder.Configuration;
 builder.Services.AddControllersWithViews()
       .AddNewtonsoftJson(options =>
         options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
-builder.Services.AddTransient<IBrandService, BrandService>();
-builder.Services.AddTransient<IMobileService, MobileService>();
 
-builder.Services.AddTransient<IOSVService, OSVService>();
- 
-builder.Services.AddTransient<IOderService, OderService>();
-builder.Services.AddTransient<IUserService, UserService>(); 
-builder.Services.AddTransient<IOperatingSystemService, OperatingSystemService>();
-builder.Services.AddTransient<ILoggerManager, LoggerManager>(); 
 builder.Services.AddDbContextPool<DataContexts>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("MyDataBase")));
 builder.Services.AddControllersWithViews()
           .AddNewtonsoftJson(options =>
           options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
-builder.Services.AddScoped<IUnitofWork, UnitWork>();
+
 builder.Services.AddAutoMapper(typeof(AutoMappers));
 builder.Services.AddCors(opt => {
     opt.AddDefaultPolicy(builder => {
