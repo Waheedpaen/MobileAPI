@@ -12,13 +12,14 @@ namespace MobileManagementSystem.Extension
         {
            Services.AddTransient<IBrandService, BrandService>();
            Services.AddTransient<IMobileService, MobileService>();
-
             Services.AddTransient<IOSVService, OSVService>();
             Services.AddScoped<IUnitofWork, UnitWork>();
             Services.AddTransient<IOderService, OderService>();
            Services.AddTransient<IUserService, UserService>();
            Services.AddTransient<IOperatingSystemService, OperatingSystemService>();
           Services.AddTransient<ILoggerManager, LoggerManager>();
+          Services.AddAutoMapper(typeof(AutoMappers));
+
             return Services;
         }
     }
