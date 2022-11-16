@@ -1,9 +1,4 @@
-﻿using DataAccessLayer.ILoggerManager;
-using DataAccessLayer.IUnitofWork;
-using ImplementDAL.LoggerManager;
-using ImplementDAL.Services;
-using ImplementDAL.UnitWorks;
-
+﻿ 
 namespace MobileManagementSystem.Extension
 {
     public static partial class IServiceCollectionExtensions

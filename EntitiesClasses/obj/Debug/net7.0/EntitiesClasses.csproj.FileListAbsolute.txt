@@ -1,0 +1,14 @@
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\bin\Debug\net7.0\EntitiesClasses.deps.json
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\bin\Debug\net7.0\EntitiesClasses.runtimeconfig.json
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\bin\Debug\net7.0\EntitiesClasses.dll
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\bin\Debug\net7.0\EntitiesClasses.pdb
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\obj\Debug\net7.0\EntitiesClasses.csproj.AssemblyReference.cache
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\obj\Debug\net7.0\EntitiesClasses.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\obj\Debug\net7.0\EntitiesClasses.AssemblyInfoInputs.cache
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\obj\Debug\net7.0\EntitiesClasses.AssemblyInfo.cs
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\obj\Debug\net7.0\EntitiesClasses.csproj.CoreCompileInputs.cache
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\obj\Debug\net7.0\EntitiesClasses.dll
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\obj\Debug\net7.0\refint\EntitiesClasses.dll
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\obj\Debug\net7.0\EntitiesClasses.pdb
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\obj\Debug\net7.0\EntitiesClasses.genruntimeconfig.cache
+E:\Mobile Managements Systems\MobileAPI\EntitiesClasses\obj\Debug\net7.0\ref\EntitiesClasses.dll

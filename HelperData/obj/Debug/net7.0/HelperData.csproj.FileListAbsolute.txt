@@ -1,0 +1,12 @@
+E:\Mobile Managements Systems\MobileAPI\HelperData\bin\Debug\net7.0\HelperData.deps.json
+E:\Mobile Managements Systems\MobileAPI\HelperData\bin\Debug\net7.0\HelperData.dll
+E:\Mobile Managements Systems\MobileAPI\HelperData\bin\Debug\net7.0\HelperData.pdb
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net7.0\HelperData.csproj.AssemblyReference.cache
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net7.0\HelperData.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net7.0\HelperData.AssemblyInfoInputs.cache
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net7.0\HelperData.AssemblyInfo.cs
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net7.0\HelperData.csproj.CoreCompileInputs.cache
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net7.0\HelperData.dll
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net7.0\refint\HelperData.dll
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net7.0\HelperData.pdb
+E:\Mobile Managements Systems\MobileAPI\HelperData\obj\Debug\net7.0\ref\HelperData.dll
