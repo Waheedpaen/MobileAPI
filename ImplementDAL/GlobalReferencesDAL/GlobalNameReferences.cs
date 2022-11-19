@@ -10,8 +10,7 @@ global using DataAccessLayer.IUnitofWork;
 global using DataAccessLayer.IRepositories;
 global using EntitiesClasses.DataContext;
 global using System;
-global using NLog;
-global using ILogger = NLog.ILogger;
+ 
 global using DataAccessLayer.ILoggerManager;
 global using System.Diagnostics;
 

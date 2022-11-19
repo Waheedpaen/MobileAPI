@@ -5,10 +5,10 @@ namespace ImplementDAL.Services;
 public class MobileService : IMobileService
 {
     private readonly IUnitofWork _unitOfWork;
-    private readonly ILoggerManager _logger;
-    public MobileService(IUnitofWork unitOfWork, ILoggerManager logger)
+ 
+    public MobileService(IUnitofWork unitOfWork )
     {
-        _logger = logger;
+      
         _unitOfWork = unitOfWork;
     }
     public async Task<Mobile> Create(Mobile model)

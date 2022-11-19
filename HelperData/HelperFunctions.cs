@@ -267,9 +267,7 @@ public static class HelperFunctions
 
     public static void CheckUserLoggedIn()
     {
-        var loggedUserId = Convert.ToInt32(_httpContextAccessor.HttpContext.User.FindFirstValue(Enums.ClaimType.UserId.ToString()));
-        if (loggedUserId == 0)
-            throw new Exception(CustomMessage.UserNotLoggedIn);
+       
     }
 
 

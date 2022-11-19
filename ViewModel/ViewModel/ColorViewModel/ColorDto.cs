@@ -1,4 +1,6 @@
-﻿namespace ViewModel.ViewModel.ColorViewModel;
+﻿using EntitiesClasses.CommonClasses;
+
+namespace ViewModel.ViewModel.ColorViewModel;
 public class ColorDto : CommonClass
 {
 }

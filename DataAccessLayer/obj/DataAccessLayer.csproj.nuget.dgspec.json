@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "E:\\MobileData\\MobileManagmentSystem\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "E:\\MobileData\\MobileManagmentSystem\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "E:\\MobileData\\MobileManagmentSystem\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "E:\\MobileData\\MobileManagmentSystem\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\obj\\",
+        "outputPath": "E:\\MobileData\\MobileManagmentSystem\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
-                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
+              "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj": {
+                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj"
               },
-              "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {
-                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj"
+              "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj": {
+                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj"
               },
-              "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj": {
-                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj"
+              "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\ViewModel.csproj": {
+                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\ViewModel.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+    "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectUniqueName": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj",
         "projectName": "EntitiesClasses",
-        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectPath": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\obj\\",
+        "outputPath": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -105,10 +105,6 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Http.Features": {
-              "target": "Package",
-              "version": "[5.0.17, )"
-            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -136,6 +132,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Features": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -158,14 +158,14 @@
         }
       }
     },
-    "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {
+    "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj",
+        "projectUniqueName": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj",
         "projectName": "HelperData",
-        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj",
+        "projectPath": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\obj\\",
+        "outputPath": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -194,17 +194,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[6.0.5, )"
-            },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.5, )"
-            },
-            "Microsoft.Extensions.Identity.Core": {
-              "target": "Package",
-              "version": "[6.0.5, )"
             }
           },
           "imports": [
@@ -227,14 +219,14 @@
         }
       }
     },
-    "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+    "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj",
+        "projectUniqueName": "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\ViewModel.csproj",
         "projectName": "ViewModel",
-        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj",
+        "projectPath": "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\ViewModel.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\obj\\",
+        "outputPath": "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -251,8 +243,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
-                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
+              "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj": {
+                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj"
               }
             }
           }
@@ -269,11 +261,11 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[11.0.1, )"
+              "version": "[12.0.0, )"
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[12.0.0, )"
             }
           },
           "imports": [

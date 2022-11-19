@@ -2,7 +2,9 @@
 
    namespace ImplementDAL.Reporsitory;
 
+using DataAccessLayer.IRepositories;
 using DataAccessLayer.Seeds;
+using EntitiesClasses.Entities;
 using HelperData;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;

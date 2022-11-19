@@ -1,12 +1,15 @@
 ﻿
 
+using DataAccessLayer.IRepositories;
+using EntitiesClasses.Entities;
 using Microsoft.EntityFrameworkCore;
 using ViewModel.ViewModels.OtherDtos;
 
 namespace ImplementDAL.Reporsitory;
 
-public class MobileRepository : Reporsitory<Mobile, int>, IMobileRepository
-   {
+
+public class MobileRepository : Reporsitory<Mobile, int>, DataAccessLayer.IRepositories.IMobileRepository
+{
     public MobileRepository(DataContexts context) : base(context)
     {
 
@@ -126,5 +129,7 @@ public class MobileRepository : Reporsitory<Mobile, int>, IMobileRepository
             .Where(data => data.ScreenSize >= model.First && data.ScreenSize <= model.Second)
             .ToListAsync();
     }
+
+   
 }
 

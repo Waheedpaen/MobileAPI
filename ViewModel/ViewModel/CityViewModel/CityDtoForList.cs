@@ -1,5 +1,7 @@
 ﻿
-    namespace ViewModel.ViewModels.CityViewModel;
+using EntitiesClasses.CommonClasses;
+
+namespace ViewModel.ViewModels.CityViewModel;
     public class CityDtoForList : CommonClass
     {
     public virtual CountryDto Country { get; set; }

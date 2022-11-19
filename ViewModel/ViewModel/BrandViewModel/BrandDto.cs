@@ -2,6 +2,8 @@
 
 
 
+using EntitiesClasses.CommonClasses;
+
 namespace ViewModel.ViewModels.BrandViewModel;
   public class BrandDto : CommonClass
    {

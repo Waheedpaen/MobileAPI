@@ -20,10 +20,10 @@ namespace ImplementDAL.Services;
     {
     public ServiceResponse<object> _serviceResponse;
     private readonly IUnitofWork _unitOfWork;
-    private readonly ILoggerManager _logger;
-    public OderService(IUnitofWork unitOfWork, ILoggerManager logger)
+ 
+    public OderService(IUnitofWork unitOfWork )
     {
-        _logger = logger;
+        
         _unitOfWork = unitOfWork;
         _serviceResponse = new ServiceResponse<object>();
     }

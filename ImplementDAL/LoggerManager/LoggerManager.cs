@@ -1,8 +1,11 @@
-﻿namespace ImplementDAL.LoggerManager;
+﻿using Microsoft.Extensions.Logging;
+using NLog;
+
+namespace ImplementDAL.LoggerManager;
 
 public class LoggerManager : ILoggerManager
 {
-    private static readonly ILogger Logger = LogManager.GetCurrentClassLogger();
+    private static readonly NLog.ILogger Logger = LogManager.GetCurrentClassLogger();
 
     public void LogDebug(string message)
     {

@@ -5,7 +5,7 @@ global using System.Threading.Tasks;
 global using System.Linq.Expressions;
 global using System.ComponentModel.DataAnnotations.Schema;
 global using System.ComponentModel.DataAnnotations;
-global using EntitiesClasses.CommonClasses;
+ 
 global using ViewModel.ViewModels.BrandViewModel;
 global using ViewModel.ViewModels.MobileImageViewModel;
 global using ViewModel.ViewModels.CountryViewModel; 
@@ -18,4 +18,4 @@ global  using ViewModel.ViewModels.CarouselViewModel;
 global  using ViewModel.ViewModels.CityViewModel;
 global  using ViewModel.ViewModels.MobileViewModel;
 global using ViewModel.ViewModels.PaymentCardViewModel;
-global using Microsoft.AspNetCore.Http;
+ 

@@ -1,5 +1,6 @@
 ﻿
 
+using EntitiesClasses.Entities;
 using HelperData;
 using ViewModel.ViewModels.UserViewModel;
 

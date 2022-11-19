@@ -1,6 +1,8 @@
 ﻿
 
 
+using EntitiesClasses.CommonClasses;
+
 namespace ViewModel.ViewModels.MobileViewModel;
      public class MobileDtoForSave : CommonClass
     {

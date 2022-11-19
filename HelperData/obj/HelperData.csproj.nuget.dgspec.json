@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {}
+    "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj": {}
   },
   "projects": {
-    "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {
+    "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj",
+        "projectUniqueName": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj",
         "projectName": "HelperData",
-        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj",
+        "projectPath": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\obj\\",
+        "outputPath": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,17 +40,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[6.0.5, )"
-            },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.5, )"
-            },
-            "Microsoft.Extensions.Identity.Core": {
-              "target": "Package",
-              "version": "[6.0.5, )"
             }
           },
           "imports": [

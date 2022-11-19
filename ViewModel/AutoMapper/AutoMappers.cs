@@ -1,5 +1,6 @@
 ﻿
 
+using EntitiesClasses.Entities;
 using ViewModel.ViewModel.ColorViewModel;
 using ViewModel.ViewModels.UserViewModel;
 

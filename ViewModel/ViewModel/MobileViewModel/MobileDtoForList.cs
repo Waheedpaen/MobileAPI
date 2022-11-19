@@ -1,5 +1,6 @@
 ﻿
 
+using EntitiesClasses.CommonClasses;
 using ViewModel.ViewModel.ColorViewModel;
 
 namespace ViewModel.ViewModels.MobileViewModel;

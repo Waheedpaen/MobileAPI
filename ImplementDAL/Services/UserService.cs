@@ -10,10 +10,10 @@ namespace ImplementDAL.Services;
     public class UserService : IUserService
     {
     private readonly IUnitofWork _unitOfWork;
-    private readonly ILoggerManager _logger;
-    public UserService(IUnitofWork unitOfWork, ILoggerManager logger)
+ 
+    public UserService(IUnitofWork unitOfWork )
     {
-        _logger = logger;
+      
         _unitOfWork = unitOfWork;
     }
 
@@ -46,14 +46,11 @@ namespace ImplementDAL.Services;
 
     public async Task<User> Delete(User model)
     {
-        try
-        {
-            _logger.LogEnter();
+         
             model.IsDeleted = true;
             await _unitOfWork.CommitAsync();
             return model;
-        }
-        finally { _logger.LogExit(); }
+        
     }
 
     public async Task<User> GetUser(int userId)

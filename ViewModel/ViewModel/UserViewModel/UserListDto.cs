@@ -1,6 +1,8 @@
-﻿ 
+﻿
 
-   namespace ViewModel.ViewModels.UserViewModel;
+using EntitiesClasses.CommonClasses;
+
+namespace ViewModel.ViewModels.UserViewModel;
  
     public class UserListDto :CommonClass
     {

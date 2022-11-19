@@ -1,5 +1,7 @@
 ﻿
-   namespace ViewModel.ViewModels.OSVersionViewModel;
+using EntitiesClasses.CommonClasses;
+
+namespace ViewModel.ViewModels.OSVersionViewModel;
    public    class OSVersionDtoForList : CommonClass
     {
     public int ?  OperatingSystemId { get; set; }
