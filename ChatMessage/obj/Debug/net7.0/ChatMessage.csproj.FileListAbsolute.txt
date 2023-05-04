@@ -1,0 +1,12 @@
+E:\Mobile Managements Systems\MobileAPI\ChatMessage\bin\Debug\net7.0\ChatMessage.deps.json
+E:\Mobile Managements Systems\MobileAPI\ChatMessage\bin\Debug\net7.0\ChatMessage.dll
+E:\Mobile Managements Systems\MobileAPI\ChatMessage\bin\Debug\net7.0\ChatMessage.pdb
+E:\Mobile Managements Systems\MobileAPI\ChatMessage\obj\Debug\net7.0\ChatMessage.csproj.AssemblyReference.cache
+E:\Mobile Managements Systems\MobileAPI\ChatMessage\obj\Debug\net7.0\ChatMessage.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mobile Managements Systems\MobileAPI\ChatMessage\obj\Debug\net7.0\ChatMessage.AssemblyInfoInputs.cache
+E:\Mobile Managements Systems\MobileAPI\ChatMessage\obj\Debug\net7.0\ChatMessage.AssemblyInfo.cs
+E:\Mobile Managements Systems\MobileAPI\ChatMessage\obj\Debug\net7.0\ChatMessage.csproj.CoreCompileInputs.cache
+E:\Mobile Managements Systems\MobileAPI\ChatMessage\obj\Debug\net7.0\ChatMessage.dll
+E:\Mobile Managements Systems\MobileAPI\ChatMessage\obj\Debug\net7.0\refint\ChatMessage.dll
+E:\Mobile Managements Systems\MobileAPI\ChatMessage\obj\Debug\net7.0\ChatMessage.pdb
+E:\Mobile Managements Systems\MobileAPI\ChatMessage\obj\Debug\net7.0\ref\ChatMessage.dll

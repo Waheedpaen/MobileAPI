@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj": {}
+    "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {}
   },
   "projects": {
-    "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
         "projectName": "EntitiesClasses",
-        "projectPath": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

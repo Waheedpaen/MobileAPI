@@ -4063,11 +4063,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj",
+      "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj",
       "projectName": "HelperData",
-      "projectPath": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj",
+      "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj",
       "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-      "outputPath": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\obj\\",
+      "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4117,7 +4117,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

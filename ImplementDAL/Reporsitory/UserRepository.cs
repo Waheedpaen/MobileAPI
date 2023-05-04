@@ -231,5 +231,12 @@ public  class UserRepository :  Reporsitory<User, int>, IUserRepository
     {
         return await Context.Set<ColorProject>().Where(data => data.Id == Id).FirstOrDefaultAsync();
     }
+
+    public async Task<Message> CreateSingleChatMessage(Message model)
+    {
+        await Context.Set<Message>().AddAsync(model);
+        return model;
+
+    }
 }
  

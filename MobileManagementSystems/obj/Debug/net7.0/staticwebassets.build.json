@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "eTzNPIUYZUQWKi5H3OqjcXjx0cI5Z6vYWu5shFm/02Q=",
+  "Hash": "GzUTMkzrcQZy/MfVVhCnxialDrrRq9i6F8BWmS/qVg0=",
   "Source": "MobileManagementSystems",
   "BasePath": "_content/MobileManagementSystems",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MobileManagementSystems\\wwwroot",
+      "Source": "MobileManagementSystems",
+      "ContentRoot": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\wwwroot\\",
+      "BasePath": "_content/MobileManagementSystems",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

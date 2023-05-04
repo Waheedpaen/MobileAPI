@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7EBZV3wl7lG4bPhqgz5n6j7SBlLf7VP1dp90buhgvnXxZla+bPSJmo98hCgRmZMNGPJvu60etRBXK5Y8B/UkRg==",
+  "dgSpecHash": "YgplQRieJeLVM07O5J9ORXBRlzr9zzaKf4L1sJNhFG9q0fTvrDSZAo5T4KVKGWqwR91BjLG8YwL/tQTCnCpiXw==",
   "success": true,
-  "projectFilePath": "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\ViewModel.csproj",
+  "projectFilePath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Waheed\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Waheed\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

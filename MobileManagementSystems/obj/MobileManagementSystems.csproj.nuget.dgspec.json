@@ -1,17 +1,86 @@
 {
   "format": 1,
   "restore": {
-    "E:\\MobileData\\MobileManagmentSystem\\MobileManagementSystems\\MobileManagementSystems.csproj": {}
+    "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\MobileManagementSystems.csproj": {}
   },
   "projects": {
-    "E:\\MobileData\\MobileManagmentSystem\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\ChatMessage\\ChatMessage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MobileData\\MobileManagmentSystem\\DataAccessLayer\\DataAccessLayer.csproj",
-        "projectName": "DataAccessLayer",
-        "projectPath": "E:\\MobileData\\MobileManagmentSystem\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\ChatMessage\\ChatMessage.csproj",
+        "projectName": "ChatMessage",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ChatMessage\\ChatMessage.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "E:\\MobileData\\MobileManagmentSystem\\DataAccessLayer\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\ChatMessage\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNet.SignalR.Core": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectName": "DataAccessLayer",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +97,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj": {
-                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
               },
-              "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj": {
-                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj"
               },
-              "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\ViewModel.csproj": {
-                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\ViewModel.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj"
               }
             }
           }
@@ -65,18 +134,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
         "projectName": "EntitiesClasses",
-        "projectPath": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -154,18 +223,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj",
         "projectName": "HelperData",
-        "projectPath": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -215,18 +284,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\MobileData\\MobileManagmentSystem\\ImplementDAL\\ImplementDAL.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MobileData\\MobileManagmentSystem\\ImplementDAL\\ImplementDAL.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj",
         "projectName": "ImplementDAL",
-        "projectPath": "E:\\MobileData\\MobileManagmentSystem\\ImplementDAL\\ImplementDAL.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "E:\\MobileData\\MobileManagmentSystem\\ImplementDAL\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -243,11 +312,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\MobileData\\MobileManagmentSystem\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\DataAccessLayer\\DataAccessLayer.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj": {
-                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
               }
             }
           }
@@ -283,18 +352,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\MobileData\\MobileManagmentSystem\\MobileManagementSystems\\MobileManagementSystems.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\MobileManagementSystems.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MobileData\\MobileManagmentSystem\\MobileManagementSystems\\MobileManagementSystems.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\MobileManagementSystems.csproj",
         "projectName": "MobileManagementSystems",
-        "projectPath": "E:\\MobileData\\MobileManagmentSystem\\MobileManagementSystems\\MobileManagementSystems.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\MobileManagementSystems.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "E:\\MobileData\\MobileManagmentSystem\\MobileManagementSystems\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -311,20 +380,23 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\MobileData\\MobileManagmentSystem\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\DataAccessLayer\\DataAccessLayer.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\ChatMessage\\ChatMessage.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ChatMessage\\ChatMessage.csproj"
               },
-              "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj": {
-                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj": {
-                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\HelperData\\HelperData.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
               },
-              "E:\\MobileData\\MobileManagmentSystem\\ImplementDAL\\ImplementDAL.csproj": {
-                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\ImplementDAL\\ImplementDAL.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\HelperData\\HelperData.csproj"
               },
-              "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\ViewModel.csproj": {
-                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\ViewModel.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ImplementDAL\\ImplementDAL.csproj"
+              },
+              "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj"
               }
             }
           }
@@ -393,18 +465,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\ViewModel.csproj": {
+    "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\ViewModel.csproj",
+        "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj",
         "projectName": "ViewModel",
-        "projectPath": "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\ViewModel.csproj",
+        "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj",
         "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
-        "outputPath": "E:\\MobileData\\MobileManagmentSystem\\ViewModel\\obj\\",
+        "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -421,8 +493,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj": {
-                "projectPath": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj"
+              "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj": {
+                "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj"
               }
             }
           }
@@ -462,7 +534,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

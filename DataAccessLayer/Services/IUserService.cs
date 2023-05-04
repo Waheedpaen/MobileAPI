@@ -8,6 +8,8 @@ namespace DataAccessLayer.Services;
      public  interface IUserService
      {
       Task<User> Logout();
+    Task<Message> CreateSingleChatMessage(Message model);
+
     Task<LoginUserDto> Login(UserDtoLogin model);
 
     Task<ServiceResponse<object>> AddUser(UserAddDto model);

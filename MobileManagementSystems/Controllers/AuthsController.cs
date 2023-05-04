@@ -19,6 +19,11 @@ using Microsoft.AspNetCore.Authorization;
 using System.Net.Mail;
 using HelperData;
 using ViewModel.ViewModel.ColorViewModel;
+using ViewModel.ViewModel.ChatHub;
+using Azure;
+using System.Globalization;
+using Microsoft.AspNetCore.SignalR;
+using CoreWebApi.Hubs;
 
 namespace MobileManagementSystem.Controllers
  ;
@@ -29,12 +34,16 @@ namespace MobileManagementSystem.Controllers
         private readonly IMapper _mapper;
         private readonly IUserService _userService;
         private readonly IConfiguration _config;
-        public AuthsController(IUserService userService, IMapper mapper, IConfiguration config)
+    private readonly DataContexts _context;
+ 
+    public AuthsController(  DataContexts context,IUserService userService, IMapper mapper, IConfiguration config)
         {
             _userService = userService;
             _mapper = mapper;
             _config = config;
-        }
+        _context = context;
+     
+    }
 
         [HttpGet("GetUsers")]
         public async Task<IActionResult> GetUser()
@@ -364,6 +373,11 @@ namespace MobileManagementSystem.Controllers
         return Ok(_response);
 
     }
+
+
+
+  
+
 
 }
 

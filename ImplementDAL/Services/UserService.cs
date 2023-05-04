@@ -160,5 +160,11 @@ catch (Exception ex)
     {
         return await _unitOfWork.IUserRepository.ColorGet(Id);
     }
+
+    public async Task<Message> CreateSingleChatMessage(Message model)
+    {
+        await _unitOfWork.IUserRepository.CreateSingleChatMessage(model);
+        return model;
+    }
 }
  

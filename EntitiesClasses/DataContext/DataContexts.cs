@@ -13,6 +13,7 @@ namespace EntitiesClasses.DataContext;
     public DbSet<OSVersion> OSVersions { get; set; }
     public DbSet<Country> Countries { get; set; }
     public DbSet<City> Cities { get; set; }
+    public DbSet<Message>  Messages { get; set; }
     public DbSet<Mobile> Mobiles { get; set; }
     public DbSet<MobileImage > MobileImages { get; set; }   
     public DbSet<Color> Colors { get; set; }

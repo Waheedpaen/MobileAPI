@@ -1,5 +1,6 @@
 ﻿
 
+using Microsoft.Graph.Models.Security;
 using ViewModel.ViewModels.BrandViewModel;
 using ViewModel.ViewModels.OperatingSystemViewModel;
 
@@ -11,14 +12,59 @@ namespace MobileManagementSystem.Controllers;
 public class OperatingSystemController : BaseController
     {
     private readonly IMapper _mapper;
+    private readonly DataContexts _dataContext;
     private readonly IOperatingSystemService _operatingSystemService;
-    public OperatingSystemController(IMapper mapper, IOperatingSystemService OperatingSystemService)
+    public OperatingSystemController(DataContexts dataContext,IMapper mapper, IOperatingSystemService OperatingSystemService)
      { 
         _mapper = mapper;
         _operatingSystemService = OperatingSystemService;
+        _dataContext = dataContext;
       }
 
-      [HttpGet("OperatingSystemList")]
+
+    [HttpGet("Get")]
+    public async Task<IActionResult> OperatingSystemList([FromQuery(Name = "searchTerm")] string ? searchTerm,
+            [FromQuery(Name = "page")] int page = 1 ,
+            [FromQuery(Name = "pageSize")] int pageSize = 5)
+    {
+        IQueryable<OperatingSystems> query = _dataContext.OperatingSystems    ;
+        var totalPageNumber = await query.CountAsync();
+
+        // Search
+        if (!string.IsNullOrEmpty(searchTerm))
+        {
+            query = query.Where(m => m.Name.Contains(searchTerm)  );
+        }
+ 
+
+        // Calculate the total number of records
+        int totalRecords = await query.CountAsync();
+
+        // Calculate the total number of pages based on the page size
+        int totalPages = (int)Math.Ceiling((double)totalRecords / pageSize);
+
+        // Calculate the start index of the records to be returned
+        int startIndex = (page - 1) * pageSize;
+
+        // Get the records for the current page
+        List<OperatingSystems> data = await query
+            .Skip(startIndex)
+            .Take(pageSize)
+            .ToListAsync();
+
+        // Return the records along with the total number of records and pages
+        return Ok(new
+        {
+            data = data,
+            totalRecords = totalRecords,
+            totalPages = totalPages,
+            totalRecordNumber = totalPageNumber
+        });
+
+     
+    }
+
+        [HttpGet("OperatingSystemList")]
       public async Task<IActionResult> OperatingSystemList()
       {
         if (!ModelState.IsValid) return BadRequest(ModelState);

@@ -3,48 +3,68 @@
 
 
 using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Wordprocessing;
 using HelperData;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Hosting.Internal;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MobileManagementSystem.Controllers;
  
     [Route("api/[controller]")]
     [ApiController]
 public class BrandController : BaseController
-{ 
+{
+    private readonly DataContexts _dbContext;
+
         private readonly IMapper _mapper;
     private readonly IConfiguration _configuration;
     private readonly IBrandService _brandService;
     private readonly IWebHostEnvironment _hostEnvironment;
-    public BrandController(IBrandService brandService, IMapper mapper, IWebHostEnvironment HostEnvironment, IConfiguration configuration)
+    public BrandController(DataContexts dbContext,IBrandService brandService, IMapper mapper, IWebHostEnvironment HostEnvironment, IConfiguration configuration)
         {
-              _brandService = brandService;
+        _dbContext = dbContext;
+        _brandService = brandService;
         _configuration = configuration;
         _mapper = mapper;
         _hostEnvironment = HostEnvironment;
     }
+    [HttpGet("{id}/download")]
+    public IActionResult DownloadPdfFile(int id)
+    {
+        var pdfFile = _dbContext.Brands.Find(id);
 
-        [HttpGet("BrandList")]
+        if (pdfFile == null)
+        {
+            return NotFound();
+        }
+
+        var filePath = Path.Combine(pdfFile.FilePath, pdfFile.FileName);
+        var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+
+        return new FileStreamResult(stream, "application/pdf");
+    }
+    [HttpGet("BrandList")]
         public async Task<IActionResult> GetBrandList()
         {
         if (!ModelState.IsValid) return BadRequest(ModelState);
         var listBrand = await _brandService.Get();
-        //List<BrandDto> brands = new  ();
-        //foreach (var item in listBrand)
-        //{
-        //    var obj = new  BrandDto();
-        //    obj.Name = item.Name;
-        //    obj.FullPath =    "images" + '/' + item.ImageUrl;
-        //    brands.Add(obj);
-         
-        //}
-
-       var brandDto =      _mapper.Map<List<BrandDto>>(listBrand);
-
-        if (brandDto != null)
+        List<BrandDto> brands = new();
+        foreach (var item in listBrand)
         {
-            _response.Data = brandDto;
+            var obj = new BrandDto();
+            obj.Name = item.Name;
+            obj.FullPath = _configuration.GetSection("AppSettings:SiteUrl").Value + item.FilePath + '/' + item.FileName;  
+            brands.Add(obj);
+
+        }
+
+        
+
+        if (brands != null)
+        {
+            _response.Data = brands;
             _response.Success = true;
             return Ok(_response);
         }
@@ -98,7 +118,7 @@ public class BrandController : BaseController
          }
 
         [HttpPost("SaveBrand")]
-        public async Task<IActionResult> SaveBrand(BrandDto brandDto)
+        public async Task<IActionResult> SaveBrand([FromForm] BrandDto brandDto)
         {
         var BrandDto = _mapper.Map<Brand>(brandDto);
         var brandNameAlreadyExit = await _brandService.BrandNameAlreadyExit(brandDto.Name);
@@ -111,12 +131,42 @@ public class BrandController : BaseController
         }
         else
         {
-            await _brandService.Create(BrandDto);
-            _response.Success = true;
-            _response.Message = CustomMessage.Added;
+            if (brandDto.Photo.Length > 0)
+            {
+                var pathToSave = Path.Combine(_hostEnvironment.WebRootPath, "Cusine");
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(brandDto.Photo.FileName);
+                var fullPath = Path.Combine(pathToSave);
+                brandDto.FilePath = "Cusine";
+                brandDto.FileName = fileName;
+                if (!Directory.Exists(pathToSave))
+                {
+                    Directory.CreateDirectory(pathToSave);
+                }
+                var filePath = Path.Combine(_hostEnvironment.WebRootPath, "Cusine", fileName);
+                //string pathString = filePath.LastIndexOf("/") + 1;
 
-            return Ok(_response);
+                using (var stream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+                {
+                    await brandDto.Photo.CopyToAsync(stream);
+                }
+                var objDishTag = new  Brand
+                {
+                    Name = brandDto.Name, 
+                    
+                    FileName = brandDto.FileName,
+                    FilePath = brandDto.FilePath,
+                    ImageUrl = "dara"
+                    
+                };
+                await _brandService.Create(objDishTag);
+                _response.Success = true;
+                _response.Message = CustomMessage.Added;
+
+                return Ok(_response);
+            }
+       
         }
+        return Ok(_response);
     }
     [HttpPost("SaveBrands")]
     public async Task<IActionResult> SaveBrands([FromForm] BrandDto brandDto)

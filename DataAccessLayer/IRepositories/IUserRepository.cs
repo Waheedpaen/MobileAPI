@@ -32,6 +32,7 @@ public interface IUserRepository : IRepository<User, int>
     Task<EmailVerificationCode> verifyEmailCodeAndEmailCheck(string emailAddress);
     Task<List<ColorProject>> ColorGetAll();
   Task<ColorProject> ColorGet(int Id);
+    Task<Message> CreateSingleChatMessage(Message model);
 
 
 }

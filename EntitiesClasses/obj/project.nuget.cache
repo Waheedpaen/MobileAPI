@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4NmqOT0SUfCYnujeJG6iW25UcVU0vLX2mlAOj/gDhPPBTLsN+rTxJQPtuh0hlUw2oGTLTg4QrLluQxLHE+TMZw==",
+  "dgSpecHash": "6teKtWXvQoTYexgq56XRHrA5slTAiZUf/t7bwER/GjnHDesSjz+kLAQG9EmBmYvYr19ubqLQj07dM6qzZ2XS3A==",
   "success": true,
-  "projectFilePath": "E:\\MobileData\\MobileManagmentSystem\\EntitiesClasses\\EntitiesClasses.csproj",
+  "projectFilePath": "E:\\Mobile Managements Systems\\MobileAPI\\EntitiesClasses\\EntitiesClasses.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Waheed\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Waheed\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

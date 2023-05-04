@@ -33,6 +33,15 @@ namespace EntitiesClasses.Migrations
                     b.Property<DateTime?>("Created_At")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("FileName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FilePath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FullPath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -228,6 +237,46 @@ namespace EntitiesClasses.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("EmailVerificationCodes");
+                });
+
+            modelBuilder.Entity("EntitiesClasses.Entities.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Attachment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsRead")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("MessageFromUserId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MessageReplyId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MessageToUserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MessageFromUserId");
+
+                    b.HasIndex("MessageToUserId");
+
+                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("EntitiesClasses.Entities.Mobile", b =>
@@ -712,6 +761,21 @@ namespace EntitiesClasses.Migrations
                         .IsRequired();
 
                     b.Navigation("Country");
+                });
+
+            modelBuilder.Entity("EntitiesClasses.Entities.Message", b =>
+                {
+                    b.HasOne("EntitiesClasses.Entities.User", "MessageFromUser")
+                        .WithMany()
+                        .HasForeignKey("MessageFromUserId");
+
+                    b.HasOne("EntitiesClasses.Entities.User", "MessageToUser")
+                        .WithMany()
+                        .HasForeignKey("MessageToUserId");
+
+                    b.Navigation("MessageFromUser");
+
+                    b.Navigation("MessageToUser");
                 });
 
             modelBuilder.Entity("EntitiesClasses.Entities.Mobile", b =>
