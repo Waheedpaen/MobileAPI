@@ -25,7 +25,7 @@ public class OperatingSystemController : BaseController
     [HttpGet("Get")]
     public async Task<IActionResult> OperatingSystemList([FromQuery(Name = "searchTerm")] string ? searchTerm,
             [FromQuery(Name = "page")] int page = 1 ,
-            [FromQuery(Name = "pageSize")] int pageSize = 5)
+            [FromQuery(Name = "pageSize")] int pageSize = 10)
     {
         IQueryable<OperatingSystems> query = _dataContext.OperatingSystems    ;
         var totalPageNumber = await query.CountAsync();
@@ -58,7 +58,7 @@ public class OperatingSystemController : BaseController
             data = data,
             totalRecords = totalRecords,
             totalPages = totalPages,
-            totalRecordNumber = totalPageNumber
+            totalRecordNumber = query.Count()
         });
 
      
