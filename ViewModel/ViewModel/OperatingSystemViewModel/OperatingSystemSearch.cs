@@ -8,8 +8,9 @@ namespace ViewModel.ViewModel.OperatingSystemViewModel
 {
     public  class OperatingSystemSearch
     {
-        public string ?  SearchTerm { get; set; }
+        public string? SearchTerm { get; set; }
         public int Page { get; set; } = 1;
         public int PageSize { get; set; } = 10;
+        public string? Age { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 ﻿
 
 using Microsoft.Graph.Models.Security;
+using ViewModel.ViewModel.OperatingSystemViewModel;
 using ViewModel.ViewModels.BrandViewModel;
 using ViewModel.ViewModels.OperatingSystemViewModel;
 
@@ -22,34 +23,100 @@ public class OperatingSystemController : BaseController
       }
 
 
+    //public async Task<IActionResult> OperatingSystemList([FromQuery(Name = "searchTerm")] string ? searchTerm,
+    //        [FromQuery(Name = "page")] int page = 1 ,
+    //        [FromQuery(Name = "pageSize")] int pageSize = 5)
+    //{
+    //    IQueryable<OperatingSystems> query = _dataContext.OperatingSystems    ;
+    //    var totalPageNumber = await query.CountAsync();
+
+    //    // Search
+    //    if (!string.IsNullOrEmpty(searchTerm))
+    //    {
+    //        query = query.Where(m => m.Name.Contains(searchTerm)  );
+    //    }
+
+
+    //    // Calculate the total number of records
+    //    int totalRecords = await query.CountAsync();
+
+    //    // Calculate the total number of pages based on the page size
+    //    int totalPages = (int)Math.Ceiling((double)totalRecords / pageSize);
+
+    //    // Calculate the start index of the records to be returned
+    //    int startIndex = (page - 1) * pageSize;
+
+    //    // Get the records for the current page
+    //    List<OperatingSystems> data = await query
+    //        .Skip(startIndex)
+    //        .Take(pageSize)
+    //        .ToListAsync();
+
+    //    // Return the records along with the total number of records and pages
+    //    return Ok(new
+    //    {
+    //        data = data,
+    //        totalRecords = totalRecords,
+    //        totalPages = totalPages,
+
+    //    });
+
+
+    //}
+
+    //    [HttpGet("OperatingSystemList")]
+    //  public async Task<IActionResult> OperatingSystemList()
+    //  {
+    //    if (!ModelState.IsValid) return BadRequest(ModelState);
+    //    var operatingSytemList = await _operatingSystemService.Get();
+    //    var osDto = _mapper.Map<List<OperatingSystemDto>>(operatingSytemList);
+    //    if (osDto != null) {
+    //        _response.Data = osDto;
+    //        _response.Success = true;
+    //        return Ok(_response);
+    //    }
+    //    else
+    //    {
+    //        _response.Success = false;
+    //        _response.Message = CustomMessage.DataNotExit;
+    //        return Ok(_response);
+    //    }
+
+    //  }
     [HttpGet("Get")]
-    public async Task<IActionResult> OperatingSystemList([FromQuery(Name = "searchTerm")] string ? searchTerm,
-            [FromQuery(Name = "page")] int page = 1 ,
-            [FromQuery(Name = "pageSize")] int pageSize = 10)
+    public async Task<IActionResult> OperatingSystemList([FromQuery] OperatingSystemSearch operatingSystemSearch)
     {
-        IQueryable<OperatingSystems> query = _dataContext.OperatingSystems    ;
+        IQueryable<OperatingSystems> query = _dataContext.OperatingSystems;
         var totalPageNumber = await query.CountAsync();
 
         // Search
-        if (!string.IsNullOrEmpty(searchTerm))
+        if ((!string.IsNullOrEmpty(operatingSystemSearch.SearchTerm) && !string.IsNullOrEmpty(operatingSystemSearch.Age)) || (!string.IsNullOrEmpty(operatingSystemSearch.Age)) || (!string.IsNullOrEmpty(operatingSystemSearch.SearchTerm)))
         {
-            query = query.Where(m => m.Name.Contains(searchTerm)  );
+            query = query.Where(m => (m.Name.Contains(operatingSystemSearch.SearchTerm) && m.Age.Equals(Convert.ToInt32(operatingSystemSearch.Age))) || ((m.Age.Equals(Convert.ToInt32(operatingSystemSearch.Age))) || (m.Name.Contains(operatingSystemSearch.SearchTerm))));
         }
- 
+        //if (!string.IsNullOrEmpty(operatingSystemSearch.SearchTerm) )
+        //{
+        //    query = query.Where(m => m.Name.Contains(operatingSystemSearch.SearchTerm)  );
+        //}
+        //if (operatingSystemSearch.Age != null)
+        //{
+        //    query = query.Where(m =>m.Age.Equals(operatingSystemSearch.Age));
+        //}
+
 
         // Calculate the total number of records
         int totalRecords = await query.CountAsync();
 
         // Calculate the total number of pages based on the page size
-        int totalPages = (int)Math.Ceiling((double)totalRecords / pageSize);
+        int totalPages = (int)Math.Ceiling((double)totalRecords / operatingSystemSearch.PageSize);
 
         // Calculate the start index of the records to be returned
-        int startIndex = (page - 1) * pageSize;
+        int startIndex = (operatingSystemSearch.Page - 1) * operatingSystemSearch.PageSize;
 
         // Get the records for the current page
         List<OperatingSystems> data = await query
             .Skip(startIndex)
-            .Take(pageSize)
+            .Take(operatingSystemSearch.PageSize)
             .ToListAsync();
 
         // Return the records along with the total number of records and pages
@@ -61,30 +128,9 @@ public class OperatingSystemController : BaseController
             totalRecordNumber = query.Count()
         });
 
-     
+
     }
-
-        [HttpGet("OperatingSystemList")]
-      public async Task<IActionResult> OperatingSystemList()
-      {
-        if (!ModelState.IsValid) return BadRequest(ModelState);
-        var operatingSytemList = await _operatingSystemService.Get();
-        var osDto = _mapper.Map<List<OperatingSystemDto>>(operatingSytemList);
-        if (osDto != null) {
-            _response.Data = osDto;
-            _response.Success = true;
-            return Ok(_response);
-        }
-        else
-        {
-            _response.Success = false;
-            _response.Message = CustomMessage.DataNotExit;
-            return Ok(_response);
-        }
-   
-      }
-
-      [HttpGet("OperatingSystemDetail/{Id}")]
+    [HttpGet("OperatingSystemDetail/{Id}")]
       public async Task<IActionResult> OperatingSystemDetail(int Id)
        {
         if(!ModelState.IsValid) return BadRequest(ModelState);

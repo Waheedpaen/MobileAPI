@@ -5,9 +5,12 @@
 using ClosedXML.Excel;
 using DocumentFormat.OpenXml.Wordprocessing;
 using HelperData;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Hosting.Internal;
+using Tavis.UriTemplates;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MobileManagementSystem.Controllers;
@@ -49,18 +52,32 @@ public class BrandController : BaseController
         public async Task<IActionResult> GetBrandList()
         {
         if (!ModelState.IsValid) return BadRequest(ModelState);
+        var result = new List<string>();
         var listBrand = await _brandService.Get();
+        
         List<BrandDto> brands = new();
         foreach (var item in listBrand)
         {
             var obj = new BrandDto();
             obj.Name = item.Name;
-            obj.FullPath = _configuration.GetSection("AppSettings:SiteUrl").Value + item.FilePath + '/' + item.FileName;  
+             
             brands.Add(obj);
 
         }
+        var uploads = Path.Combine(_hostEnvironment.WebRootPath, "Cusine");
+        if (Directory.Exists(uploads))
+        {
+            var provider = _hostEnvironment.ContentRootFileProvider;
+            foreach (string fileName in Directory.GetFiles(uploads))
+            {
+                var obj = new BrandDto();
+                var fileInfo = provider.GetFileInfo(fileName);
+                obj.FullPath = fileInfo.Name;
+                     brands.Add(obj);
+          
+            }
+        }
 
-        
 
         if (brands != null)
         {
@@ -202,8 +219,7 @@ public class BrandController : BaseController
 
             return Ok(_response);
         }
-    }
-
+    } 
 
     [HttpPost("SaveBrandListExcel")]
         public async Task<IActionResult> SaveBrandExcel(List<BrandDto> brands)
@@ -315,7 +331,69 @@ public class BrandController : BaseController
         return File(content, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "users.xlsx");
     }
 
+    [HttpGet("Download")]
+   
+    public async Task<IActionResult> Download([FromQuery(Name = "file")] string? file)
+    {
+        var uploads = Path.Combine(_hostEnvironment.WebRootPath, "Cusine");
+        var filePath = Path.Combine(uploads, file);
+        if (!System.IO.File.Exists(filePath))
+            return NotFound();
 
+        var memory = new MemoryStream();
+        using (var stream = new FileStream(filePath, FileMode.Open))
+        {
+            await stream.CopyToAsync(memory);
+        }
+        memory.Position = 0;
 
+               return File(memory, GetContentType(filePath), file);
+    }
+    private string GetContentType(string path)
+    {
+        var provider = new FileExtensionContentTypeProvider();
+        string contentType;
+        if (!provider.TryGetContentType(path, out contentType))
+        {
+            contentType = "application/octet-stream";
+        }
+        return contentType;
+    }
+    [HttpGet("files")] 
+    public IActionResult Files()
+    {
+         var result = new List<string>();
+
+        var uploads = Path.Combine(_hostEnvironment.WebRootPath, "uploads");
+        if (Directory.Exists(uploads))
+        {
+            var provider = _hostEnvironment.ContentRootFileProvider;
+            foreach (string fileName in Directory.GetFiles(uploads))
+            {
+                var fileInfo = provider.GetFileInfo(fileName);
+                result.Add(fileInfo.Name);
+            }
+        }
+        return Ok(result);
+    }
+    [HttpPost("upload")]
+    
+    public async Task<IActionResult> Upload(IFormFile file)
+    {
+        var uploads = Path.Combine(_hostEnvironment.WebRootPath, "Cusine");
+        if (!Directory.Exists(uploads))
+        {
+            Directory.CreateDirectory(uploads);
+        }
+        if (file.Length > 0)
+        {
+            var filePath = Path.Combine(uploads, file.FileName);
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(fileStream);
+            }
+        }
+        return Ok();
+    }
 }
- 
+
