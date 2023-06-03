@@ -3,6 +3,7 @@
 
 
 using ClosedXML.Excel;
+using DocumentFormat.OpenXml.InkML;
 using DocumentFormat.OpenXml.Wordprocessing;
 using HelperData;
 using Microsoft.AspNetCore.Hosting;
@@ -52,6 +53,7 @@ public class BrandController : BaseController
         public async Task<IActionResult> GetBrandList()
         {
         if (!ModelState.IsValid) return BadRequest(ModelState);
+        var results =  _dbContext.OperatingSystems.FromSqlRaw("StpGetAllMemberss").AsEnumerable().ToList();  
         var result = new List<string>();
         var listBrand = await _brandService.Get();
         

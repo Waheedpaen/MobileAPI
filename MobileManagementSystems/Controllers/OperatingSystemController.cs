@@ -1,5 +1,8 @@
 ﻿
 
+using DocumentFormat.OpenXml.InkML;
+using EntitiesClasses.DataContext;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.Graph.Models.Security;
 using ViewModel.ViewModel.OperatingSystemViewModel;
 using ViewModel.ViewModels.BrandViewModel;
@@ -15,12 +18,14 @@ public class OperatingSystemController : BaseController
     private readonly IMapper _mapper;
     private readonly DataContexts _dataContext;
     private readonly IOperatingSystemService _operatingSystemService;
-    public OperatingSystemController(DataContexts dataContext,IMapper mapper, IOperatingSystemService OperatingSystemService)
+    private readonly IHubContext<BroadcastHub, IHubClient> _hubContext;
+    public OperatingSystemController(IHubContext<BroadcastHub, IHubClient> hubContext ,DataContexts dataContext,IMapper mapper, IOperatingSystemService OperatingSystemService)
      { 
         _mapper = mapper;
         _operatingSystemService = OperatingSystemService;
         _dataContext = dataContext;
-      }
+        _hubContext = hubContext;
+    }
 
 
     //public async Task<IActionResult> OperatingSystemList([FromQuery(Name = "searchTerm")] string ? searchTerm,
@@ -86,10 +91,18 @@ public class OperatingSystemController : BaseController
     [HttpGet("Get")]
     public async Task<IActionResult> OperatingSystemList([FromQuery] OperatingSystemSearch operatingSystemSearch)
     {
-        IQueryable<OperatingSystems> query = _dataContext.OperatingSystems;
+        IQueryable<OperatingSystems> query = _dataContext.OperatingSystems; 
         var totalPageNumber = await query.CountAsync();
+        var blogs = _dataContext.OperatingSystems
+           .FromSql($"SELECT * FROM dbo.OperatingSystems")
+           .ToList();
+        var blogfs = _dataContext.OperatingSystems
+           .FromSql($"EXECUTE dbo.StpGetAllMembers")
+           .AsEnumerable().ToList();
 
-        // Search
+
+
+        // Sear.ch
         if ((!string.IsNullOrEmpty(operatingSystemSearch.SearchTerm) && !string.IsNullOrEmpty(operatingSystemSearch.Age)) || (!string.IsNullOrEmpty(operatingSystemSearch.Age)) || (!string.IsNullOrEmpty(operatingSystemSearch.SearchTerm)))
         {
             query = query.Where(m => (m.Name.Contains(operatingSystemSearch.SearchTerm) && m.Age.Equals(Convert.ToInt32(operatingSystemSearch.Age))) || ((m.Age.Equals(Convert.ToInt32(operatingSystemSearch.Age))) || (m.Name.Contains(operatingSystemSearch.SearchTerm))));
@@ -120,9 +133,9 @@ public class OperatingSystemController : BaseController
             .ToListAsync();
 
         // Return the records along with the total number of records and pages
-        return Ok(new
+          return Ok(new
         {
-            data = data,
+            data = data.Where(data=>data.UserId == operatingSystemSearch.UserId).ToList(),
             totalRecords = totalRecords,
             totalPages = totalPages,
             totalRecordNumber = query.Count()
@@ -158,6 +171,8 @@ public class OperatingSystemController : BaseController
         var osObj = await _operatingSystemService.Get(Id);
         if(osObj != null)
         {
+           
+        
             await _operatingSystemService.Delete(osObj);
             _response.Success = true;
             _response.Message = CustomMessage.Deleted;
@@ -185,6 +200,15 @@ public class OperatingSystemController : BaseController
         else
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
+            Notification notification = new Notification()
+            {
+                EmployeeName = operatingSystemDto.Name,
+                TranType = "Edit"
+            };
+
+             _dataContext.Notifications.Add(notification);
+            await _dataContext.SaveChangesAsync();
+            await _hubContext.Clients.All.BroadcastMessage();
             var operatingSystemsDto = _mapper.Map<OperatingSystems>(operatingSystemDto);
             await _operatingSystemService.Create(operatingSystemsDto);
             _response.Success = true;
@@ -214,6 +238,15 @@ public class OperatingSystemController : BaseController
             var objOS = await _operatingSystemService.Get(operatingSystemEntity.Id);
             if (objOS != null)
             {
+                Notification notification = new Notification()
+                {
+                    EmployeeName = objOS.Name,
+                    TranType = "Edit"
+                };
+
+                _dataContext.Notifications.Add(notification);
+                await _dataContext.SaveChangesAsync();
+                await _hubContext.Clients.All.BroadcastMessage();
                 await _operatingSystemService.Update(objOS, operatingSystemEntity);
                 _response.Success = true;
                 _response.Message = CustomMessage.Updated; ;

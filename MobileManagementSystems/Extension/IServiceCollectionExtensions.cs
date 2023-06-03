@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
+using Microsoft.Extensions.Configuration;
 
 namespace MobileManagementSystem.Extension
 {
@@ -24,6 +25,7 @@ namespace MobileManagementSystem.Extension
             });
 
 
+            Services.AddSignalR();
 
             Services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new OpenApiInfo

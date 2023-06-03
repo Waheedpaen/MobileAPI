@@ -10,6 +10,7 @@ namespace EntitiesClasses.DataContext;
     }
     public DbSet<Brand> Brands { get; set; }
     public DbSet<OperatingSystems> OperatingSystems { get; set; }
+    public DbSet<Notification>  Notifications { get; set; }
     public DbSet<OSVersion> OSVersions { get; set; }
     public DbSet<Country> Countries { get; set; }
     public DbSet<City> Cities { get; set; }
@@ -21,11 +22,11 @@ namespace EntitiesClasses.DataContext;
     public DbSet<Carousel> Carousels { get; set; }
     public DbSet<User> Users { get; set; }
      public DbSet<EmailVerificationCode> EmailVerificationCodes { get; set; }
-    public DbSet<Order>  Orders { get; set; }
-    public DbSet<OrderDetail> OrderDetail { get; set; }
+    //public DbSet<Order>  Orders { get; set; }
+    //public DbSet<OrderDetail> OrderDetail { get; set; }
     public DbSet<UserTypes> UserTypes { get; set; }
     public DbSet<PaymentCard> PaymentCards { get; set; }
-    public DbSet<OrderPayment> OrderPayments { get; set; }
+    //public DbSet<OrderPayment> OrderPayments { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
      

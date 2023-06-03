@@ -130,12 +130,20 @@ E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\log4net.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\System.Web.Cors.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNet.SignalR.Core.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNet.SignalR.SystemWeb.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.Http.Connections.Common.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Client.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Common.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
@@ -144,6 +152,8 @@ E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Extensions.Features.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Graph.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Graph.Core.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Identity.Client.dll
@@ -162,6 +172,7 @@ E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Kiota.Serialization.Text.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.OpenApi.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Owin.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Owin.Host.SystemWeb.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Owin.Security.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll

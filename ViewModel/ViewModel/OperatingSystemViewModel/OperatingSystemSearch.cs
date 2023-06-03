@@ -12,5 +12,6 @@ namespace ViewModel.ViewModel.OperatingSystemViewModel
         public int Page { get; set; } = 1;
         public int PageSize { get; set; } = 10;
         public string? Age { get; set; }
+        public int UserId { get; set; }
     }
 }
