@@ -524,6 +524,27 @@ namespace EntitiesClasses.Migrations
                     b.ToTable("OperatingSystems");
                 });
 
+            modelBuilder.Entity("EntitiesClasses.Entities.PDF", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<byte[]>("Content")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PDFs");
+                });
+
             modelBuilder.Entity("EntitiesClasses.Entities.PaymentCard", b =>
                 {
                     b.Property<int>("Id")
@@ -563,6 +584,30 @@ namespace EntitiesClasses.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("PaymentCards");
+                });
+
+            modelBuilder.Entity("EntitiesClasses.Entities.PdfDocument", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Author")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("Content")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PdfDocuments");
                 });
 
             modelBuilder.Entity("EntitiesClasses.Entities.User", b =>

@@ -187,7 +187,6 @@ E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\System.CodeDom.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
-E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\System.Diagnostics.DiagnosticSource.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\System.Drawing.Common.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\System.IO.Packaging.dll
@@ -196,7 +195,6 @@ E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\System.Runtime.Caching.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\System.Security.Permissions.dll
-E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\System.Text.Json.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\System.Windows.Extensions.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Tavis.UriTemplates.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\XLParser.dll

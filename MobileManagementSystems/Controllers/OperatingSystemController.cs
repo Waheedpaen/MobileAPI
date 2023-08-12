@@ -93,12 +93,7 @@ public class OperatingSystemController : BaseController
     {
         IQueryable<OperatingSystems> query = _dataContext.OperatingSystems; 
         var totalPageNumber = await query.CountAsync();
-        var blogs = _dataContext.OperatingSystems
-           .FromSql($"SELECT * FROM dbo.OperatingSystems")
-           .ToList();
-        var blogfs = _dataContext.OperatingSystems
-           .FromSql($"EXECUTE dbo.StpGetAllMembers")
-           .AsEnumerable().ToList();
+      
 
 
 
@@ -133,9 +128,10 @@ public class OperatingSystemController : BaseController
             .ToListAsync();
 
         // Return the records along with the total number of records and pages
-          return Ok(new
+        //    data = data.Where(data=>data.UserId == operatingSystemSearch.UserId).ToList(),
+        return Ok(new
         {
-            data = data.Where(data=>data.UserId == operatingSystemSearch.UserId).ToList(),
+            data = data,
             totalRecords = totalRecords,
             totalPages = totalPages,
             totalRecordNumber = query.Count()

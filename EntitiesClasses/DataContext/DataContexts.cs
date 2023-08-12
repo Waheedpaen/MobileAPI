@@ -12,8 +12,10 @@ namespace EntitiesClasses.DataContext;
     public DbSet<OperatingSystems> OperatingSystems { get; set; }
     public DbSet<Notification>  Notifications { get; set; }
     public DbSet<OSVersion> OSVersions { get; set; }
+    public DbSet<PdfDocument> PdfDocuments { get; set; }
     public DbSet<Country> Countries { get; set; }
     public DbSet<City> Cities { get; set; }
+    public DbSet<PDF> PDFs { get; set; }    
     public DbSet<Message>  Messages { get; set; }
     public DbSet<Mobile> Mobiles { get; set; }
     public DbSet<MobileImage > MobileImages { get; set; }   

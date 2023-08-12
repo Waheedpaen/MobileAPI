@@ -3616,7 +3616,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Waheed\\.nuget\\packages\\": {}
+    "C:\\Users\\Wa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -3624,11 +3624,11 @@
       "projectUniqueName": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj",
       "projectName": "ViewModel",
       "projectPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\ViewModel.csproj",
-      "packagesPath": "C:\\Users\\Waheed\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Wa\\.nuget\\packages\\",
       "outputPath": "E:\\Mobile Managements Systems\\MobileAPI\\ViewModel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Waheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Wa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3683,7 +3683,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }
