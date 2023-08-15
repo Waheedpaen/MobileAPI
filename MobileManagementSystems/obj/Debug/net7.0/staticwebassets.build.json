@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/jYQiYWG91aJjXBdE52sX7ONo1U8tM2b3O3KwSCm6sM=",
+  "Hash": "J2whao1qIu3MC2OlRId+hC3Ws4aJ7UwQSkWdj9rBa/Q=",
   "Source": "MobileManagementSystems",
   "BasePath": "_content/MobileManagementSystems",
   "Mode": "Default",
@@ -34,6 +34,23 @@
       "OriginalItemSpec": "wwwroot\\.gitignore"
     },
     {
+      "Identity": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\wwwroot\\pdfs\\0d38d13d-11a5-4d9f-aff2-84e61476c610.pdf",
+      "SourceId": "MobileManagementSystems",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\wwwroot\\",
+      "BasePath": "_content/MobileManagementSystems",
+      "RelativePath": "pdfs/0d38d13d-11a5-4d9f-aff2-84e61476c610.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pdfs\\0d38d13d-11a5-4d9f-aff2-84e61476c610.pdf"
+    },
+    {
       "Identity": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\wwwroot\\pdfs\\5e116aa7-26a0-46c6-9982-957faba33b0c.pdf",
       "SourceId": "MobileManagementSystems",
       "SourceType": "Discovered",
@@ -49,6 +66,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\pdfs\\5e116aa7-26a0-46c6-9982-957faba33b0c.pdf"
+    },
+    {
+      "Identity": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\wwwroot\\pdfs\\9e4533fb-8052-405b-8432-8770412e6d6f.pdf",
+      "SourceId": "MobileManagementSystems",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\wwwroot\\",
+      "BasePath": "_content/MobileManagementSystems",
+      "RelativePath": "pdfs/9e4533fb-8052-405b-8432-8770412e6d6f.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pdfs\\9e4533fb-8052-405b-8432-8770412e6d6f.pdf"
+    },
+    {
+      "Identity": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\wwwroot\\uploads\\2a8ebf71-32fc-43d8-90d0-b5c6d6237121.jpg",
+      "SourceId": "MobileManagementSystems",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\wwwroot\\",
+      "BasePath": "_content/MobileManagementSystems",
+      "RelativePath": "uploads/2a8ebf71-32fc-43d8-90d0-b5c6d6237121.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\2a8ebf71-32fc-43d8-90d0-b5c6d6237121.jpg"
+    },
+    {
+      "Identity": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\wwwroot\\uploads\\6500bc5b-6283-4862-98a4-1fb1d35c9997.pdf",
+      "SourceId": "MobileManagementSystems",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Mobile Managements Systems\\MobileAPI\\MobileManagementSystems\\wwwroot\\",
+      "BasePath": "_content/MobileManagementSystems",
+      "RelativePath": "uploads/6500bc5b-6283-4862-98a4-1fb1d35c9997.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\6500bc5b-6283-4862-98a4-1fb1d35c9997.pdf"
     }
   ]
 }

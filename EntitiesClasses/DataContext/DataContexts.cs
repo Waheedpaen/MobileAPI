@@ -13,6 +13,7 @@ namespace EntitiesClasses.DataContext;
     public DbSet<Notification>  Notifications { get; set; }
     public DbSet<OSVersion> OSVersions { get; set; }
     public DbSet<PdfDocument> PdfDocuments { get; set; }
+    public DbSet<PdfDocumentImage> PdfDocumentImages { get; set; }
     public DbSet<Country> Countries { get; set; }
     public DbSet<City> Cities { get; set; }
     public DbSet<PDF> PDFs { get; set; }    

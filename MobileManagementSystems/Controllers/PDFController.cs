@@ -19,7 +19,7 @@ namespace MobileManagementSystems.Controllers
     public class PDFController : ControllerBase
     {
         private readonly DataContexts _dbContext;
-        private readonly IMapper _mapper; 
+        private readonly IMapper _mapper;
         private readonly IConfiguration _configuration;
         private readonly IBrandService _brandService;
         private readonly IWebHostEnvironment _hostEnvironment;
@@ -32,7 +32,7 @@ namespace MobileManagementSystems.Controllers
             _hostEnvironment = HostEnvironment;
         }
 
-
+        // if you want save pdf in byt and it will save in database 
         [HttpPost("upload")]
         public async Task<IActionResult> UploadPdf(IFormFile pdfFile)
         {
@@ -65,8 +65,8 @@ namespace MobileManagementSystems.Controllers
 
 
 
-         
 
+        //it byid pdf ..using byth way
 
 
         //[HttpGet("{id}")]
@@ -85,7 +85,7 @@ namespace MobileManagementSystems.Controllers
 
 
 
-
+        // save pdf in floder using this method 
         [HttpPost("uploads")]
         public async Task<IActionResult> UploadPdf([FromForm] PDFViewModel request)
         {
@@ -103,12 +103,11 @@ namespace MobileManagementSystems.Controllers
                 await request.PdfFile.CopyToAsync(stream);
             }
 
-            // Save additional metadata to the database
             var pdfDocument = new PdfDocument
             {
                 FileName = fileName,
-                Author = request.Author, // Assuming 'Author' is a property in the UploadPdfRequest class
-                Content = System.IO.File.ReadAllBytes(filePath) // Read the content back from the saved file
+                Author = request.Author,
+                FilePath = filePath
             };
 
             _dbContext.PdfDocuments.Add(pdfDocument);
@@ -117,6 +116,27 @@ namespace MobileManagementSystems.Controllers
             return Ok("PDF file uploaded and saved successfully.");
         }
 
+        // getby  pdf in floder using this method 
+        //    [HttpGet("{id}")]
+        //    public IActionResult GetPdfById(int id)
+        //    {
+        //        var pdfDocument = _dbContext.PdfDocuments.Find(id);
+
+        //        if (pdfDocument == null)
+        //        {
+        //            return NotFound();
+        //        }
+
+        //        var filePath = Path.Combine(_hostEnvironment.WebRootPath, "pdfs", pdfDocument.FileName);
+        //        var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+
+        //     return File(fileStream, "application/pdf", pdfDocument.FileName);
+        //    }
+
+
+        //}
+
+        // get by id pdf from floder 
 
         [HttpGet("{id}")]
         public IActionResult GetPdfById(int id)
@@ -128,27 +148,19 @@ namespace MobileManagementSystems.Controllers
                 return NotFound();
             }
 
-            var filePath = Path.Combine(_hostEnvironment.WebRootPath, "pdfs", pdfDocument.FileName);
-            var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-             
+            var fileStream = new FileStream(pdfDocument.FilePath, FileMode.Open, FileAccess.Read);
+            
          return File(fileStream, "application/pdf", pdfDocument.FileName);
         }
 
 
+
+
     }
-
-
-
-
-
-
-
-
-
-
-
-    
 }
+
+
+
 
 
 
