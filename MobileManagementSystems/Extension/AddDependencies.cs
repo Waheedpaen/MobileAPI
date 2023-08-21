@@ -1,6 +1,8 @@
 ﻿
 
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 using ImplementDAL.LoggerManager;
+using MobileManagementSystems.GlobalReferences;
 
 namespace MobileManagementSystem.Extension
 {
@@ -13,9 +15,10 @@ namespace MobileManagementSystem.Extension
             Services.AddTransient<IOSVService, OSVService>();
             Services.AddScoped<IUnitofWork, UnitWork>();
             Services.AddTransient<IOderService, OderService>();
+            Services.AddScoped<PdfGeneratorData>();
             Services.AddTransient<IUserService, UserService>();
             Services.AddTransient<IOperatingSystemService, OperatingSystemService>();
-          Services.AddTransient<ILoggerManager, LoggerManager>();
+            Services.AddTransient<ILoggerManager, LoggerManager>();
             Services.AddAutoMapper(typeof(AutoMappers));
 
             return Services;

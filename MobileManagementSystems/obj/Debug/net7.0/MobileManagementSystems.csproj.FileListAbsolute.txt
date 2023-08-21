@@ -103,13 +103,6 @@ E:\MobileData\MobileManagmentSystem\MobileManagementSystems\obj\Debug\net7.0\ref
 E:\MobileData\MobileManagmentSystem\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 E:\MobileData\MobileManagmentSystem\MobileManagementSystems\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 E:\MobileData\MobileManagmentSystem\MobileManagementSystems\bin\Debug\net7.0\log4net.dll
-E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.csproj.AssemblyReference.cache
-E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.GeneratedMSBuildEditorConfig.editorconfig
-E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.AssemblyInfoInputs.cache
-E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.AssemblyInfo.cs
-E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.csproj.CoreCompileInputs.cache
-E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.MvcApplicationPartsAssemblyInfo.cs
-E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.MvcApplicationPartsAssemblyInfo.cache
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\appsettings.Development.json
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\appsettings.json
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\MobileManagementSystems.staticwebassets.runtime.json
@@ -177,10 +170,13 @@ E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Mustache.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\mustache-sharp.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Newtonsoft.Json.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\NLog.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Owin.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\PuppeteerSharp.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\SixLabors.Fonts.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -222,6 +218,13 @@ E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\HelperData.pdb
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\ImplementDAL.pdb
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\ViewModel.pdb
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.csproj.AssemblyReference.cache
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.AssemblyInfoInputs.cache
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.AssemblyInfo.cs
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.csproj.CoreCompileInputs.cache
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.MvcApplicationPartsAssemblyInfo.cs
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.MvcApplicationPartsAssemblyInfo.cache
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\staticwebassets\msbuild.MobileManagementSystems.Microsoft.AspNetCore.StaticWebAssets.props
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\staticwebassets\msbuild.build.MobileManagementSystems.props
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.MobileManagementSystems.props
@@ -236,5 +239,4 @@ E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.pdb
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.genruntimeconfig.cache
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\ref\MobileManagementSystems.dll
-E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\PuppeteerSharp.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\ICSharpCode.SharpZipLib.dll

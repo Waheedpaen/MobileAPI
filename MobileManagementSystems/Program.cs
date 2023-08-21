@@ -1,10 +1,8 @@
 
 
 using CoreWebApi.Hubs;
-using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 using Microsoft.AspNetCore.Http.Features;
-using MobileManagementSystems.GlobalReferences;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,8 +12,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDependencies();
 builder.Services.AddIdentityServices(builder.Configuration);
 builder.Services.AddSignalR();
-builder.Services.AddSingleton<PdfGeneratorData>();
- 
 
 builder.Services.Configure<IISServerOptions>(options =>
 {
@@ -46,7 +42,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 
- 
+
 app.MapHub<BroadcastHub>("/notify");
 app.UseCors();
 

@@ -10,9 +10,9 @@ using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
- 
- 
-using PuppeteerSharp; 
+
+
+using PuppeteerSharp;
 using MobileManagementSystems.GlobalReferences;
 
 namespace MobileManagementSystems.Controllers
@@ -21,8 +21,8 @@ namespace MobileManagementSystems.Controllers
     [ApiController]
     public class PdfDocumentImageController : ControllerBase
     {
-        private readonly  PdfGeneratorData _pdfGenerator;
-    
+        private readonly PdfGeneratorData _pdfGenerator;
+
         private readonly DataContexts _dbContext;
         private readonly IMapper _mapper;
         private readonly IConfiguration _configuration;
@@ -31,7 +31,7 @@ namespace MobileManagementSystems.Controllers
         public PdfDocumentImageController(DataContexts dbContext,
             IBrandService brandService, IMapper mapper,
             IWebHostEnvironment HostEnvironment, IConfiguration configuration,
-      
+
 
        PdfGeneratorData pdfGenerator
             )
@@ -41,7 +41,7 @@ namespace MobileManagementSystems.Controllers
             _configuration = configuration;
             _mapper = mapper;
             _hostEnvironment = HostEnvironment;
-        
+
             _pdfGenerator = pdfGenerator;
         }
 
@@ -105,7 +105,7 @@ namespace MobileManagementSystems.Controllers
 
 
 
-          // how to generate pdf in .net core
+        // how to generate pdf in .net core
         // using PuppeteerSharp.Media;
         //using PuppeteerSharp; 
 
@@ -117,15 +117,7 @@ namespace MobileManagementSystems.Controllers
         [HttpGet("wag")]
         public async Task<IActionResult> GeneratePdf()
         {
-            var list = _dbContext.OperatingSystems.ToList();
-            var loopContent = "";
-            foreach (var item in list)
-            {
-                loopContent += $@"
-    <div class=""col-4 mb-4"">
-        {item.Name}
-    </div>";
-            }
+           
 
             var htmlContent = $@"<!DOCTYPE html>
 <html>
@@ -148,7 +140,7 @@ namespace MobileManagementSystems.Controllers
     </div>
   <div class=""container-fluid"">
 <div class=""row"">
-    {loopContent}
+  sara
 
 </div>
         <h1 class=""text-danger"">Custom PDF Example</h1>
@@ -158,11 +150,11 @@ namespace MobileManagementSystems.Controllers
 </body>
 </html>";
 
-            var pdfBytes = await   _pdfGenerator.GeneratePdfFromHtml(htmlContent);
+            var pdfBytes = await _pdfGenerator.GeneratePdfAsync(htmlContent);
 
             return File(pdfBytes, "application/pdf", "output.pdf");
         }
     }
 
 }
- 
+

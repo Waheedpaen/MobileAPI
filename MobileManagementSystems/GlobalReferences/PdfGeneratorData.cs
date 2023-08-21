@@ -5,27 +5,30 @@ namespace MobileManagementSystems.GlobalReferences
 {
     public class PdfGeneratorData
     {
-        public async Task<byte[]> GeneratePdfFromHtml(string htmlContent)
+        public async Task<byte[]> GeneratePdfAsync(string htmlContent)
         {
-            await new BrowserFetcher().DownloadAsync(BrowserFetcher.DefaultChromiumRevision);
+            var browserFetcher = new BrowserFetcher();
+            await browserFetcher.DownloadAsync(BrowserFetcher.DefaultRevision);
 
-            var browser = await Puppeteer.LaunchAsync(new LaunchOptions
+            var launchOptions = new LaunchOptions
             {
-                Headless = true
-            });
+                Headless = true,
+                ExecutablePath = browserFetcher.GetExecutablePath(BrowserFetcher.DefaultRevision)
+            };
 
-            var page = await browser.NewPageAsync();
-            await page.SetContentAsync(htmlContent);
-
-            var pdfBytes = await page.PdfDataAsync(new PdfOptions
+            using (var browser = await Puppeteer.LaunchAsync(launchOptions))
+            using (var page = await browser.NewPageAsync())
             {
-                Format = PaperFormat.A4,
-                PrintBackground = true
-            });
+                await page.SetContentAsync(htmlContent);
 
-            await browser.CloseAsync();
+                var pdfBytes = await page.PdfDataAsync(new PdfOptions
+                {
+                    Format = PaperFormat.A4,
+                    PrintBackground = true
+                });
 
-            return pdfBytes;
+                return pdfBytes;
+            }
         }
     }
 }

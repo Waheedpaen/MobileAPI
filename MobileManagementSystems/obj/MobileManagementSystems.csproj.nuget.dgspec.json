@@ -458,9 +458,13 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Mustache": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "PuppeteerSharp": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[11.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -469,6 +473,10 @@
             "log4net": {
               "target": "Package",
               "version": "[2.0.15, )"
+            },
+            "mustache-sharp": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [
