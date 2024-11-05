@@ -177,6 +177,7 @@ E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\NLog.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Owin.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\PuppeteerSharp.dll
+E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\ICSharpCode.SharpZipLib.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\SixLabors.Fonts.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -239,4 +240,3 @@ E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.pdb
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\MobileManagementSystems.genruntimeconfig.cache
 E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\obj\Debug\net7.0\ref\MobileManagementSystems.dll
-E:\Mobile Managements Systems\MobileAPI\MobileManagementSystems\bin\Debug\net7.0\ICSharpCode.SharpZipLib.dll

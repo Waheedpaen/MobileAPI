@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace EntitiesClasses.Migrations
 {
     /// <inheritdoc />
-    public partial class samedata : Migration
+    public partial class database : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -148,6 +148,53 @@ namespace EntitiesClasses.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_PaymentCards", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PdfDocumentImages",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Author = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FileNamePDF = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FilePathPDF = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FileNameImage = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FilePathImage = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PdfDocumentImages", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PdfDocuments",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Content = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
+                    Author = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FileName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FilePath = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PdfDocuments", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PDFs",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FileName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Content = table.Column<byte[]>(type: "varbinary(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PDFs", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -456,6 +503,15 @@ namespace EntitiesClasses.Migrations
 
             migrationBuilder.DropTable(
                 name: "PaymentCards");
+
+            migrationBuilder.DropTable(
+                name: "PdfDocumentImages");
+
+            migrationBuilder.DropTable(
+                name: "PdfDocuments");
+
+            migrationBuilder.DropTable(
+                name: "PDFs");
 
             migrationBuilder.DropTable(
                 name: "Countries");
